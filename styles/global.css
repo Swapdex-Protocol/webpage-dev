@@ -9,3 +9,14 @@
     font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
   }
+
+.nav-button-gradient {
+  background-color:hsla(320,55%,44%,1);
+  background-image:
+  radial-gradient(at 93% 85%, hsla(336,76%,56%,1) 0px, transparent 50%),
+  radial-gradient(at 12% 3%, hsla(320,55%,44%,1) 0px, transparent 50%),
+  radial-gradient(at 40% 20%, hsla(336,76%,57%,1) 0px, transparent 50%),
+  radial-gradient(at 80% 0%, hsla(320,55%,44%,1) 0px, transparent 50%),
+  radial-gradient(at 94% 19%, hsla(320,55%,44%,1) 0px, transparent 50%),
+  radial-gradient(at 78% 26%, hsla(336,76%,56%,1) 0px, transparent 50%);
+}
