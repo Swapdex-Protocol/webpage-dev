@@ -1,7 +1,7 @@
 import Navbar from './Navbar';
 import AppShowcase from './AppShowcase';
 import DEXShowcase from './DEXShowcase';
-import DownloadButton from './DownloadButton';
+import NavButton from './NavButton';
 import ExploreCard from './ExploreCard';
 import LargeKPIField from './LargeKPIField';
 import MobileDownloadButton from './MobileDownloadButton';
@@ -13,7 +13,7 @@ export {
   Navbar,
   AppShowcase,
   DEXShowcase,
-  DownloadButton,
+  NavButton,
   ExploreCard,
   LargeKPIField,
   MobileDownloadButton,

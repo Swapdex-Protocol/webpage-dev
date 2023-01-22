@@ -3,13 +3,14 @@
 import { motion } from 'framer-motion';
 import styles from '../styles';
 import { navVariants } from '../utils/motion';
-import DownloadButton from './DownloadButton';
+import NavButton from './NavButton';
 
 const Navbar = () => (
   <motion.nav
     variants={navVariants}
     initial="hidden"
     whileInView="show"
+    viewport={{ once: true }}
     className={`${styles.xPaddings} py-8 relative bg-SDX-900`}
   >
     <div className={`${styles.innerWidth} mx-auto flex justify-between items-center`}>
@@ -29,9 +30,9 @@ const Navbar = () => (
         <a href="#dex" className="font-regular text-[18px] leading-[24px] text-SDX-200">DEX</a>
         <a href="#NFTMarketplace" className="font-regular text-[18px] leading-[24px] text-SDX-200">NFT Marketplace</a>
       </div>
-      <DownloadButton href="https://app.swapdex.network/#/swapdex/" target="_blank" className="nav-button-gradient">
+      <NavButton href="https://app.swapdex.network/#/swapdex/" target="_blank" className="nav-button-gradient">
         Launch App
-      </DownloadButton>
+      </NavButton>
     </div>
 
   </motion.nav>

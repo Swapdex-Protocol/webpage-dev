@@ -20,3 +20,69 @@
   radial-gradient(at 94% 19%, hsla(320,55%,44%,1) 0px, transparent 50%),
   radial-gradient(at 78% 26%, hsla(336,76%,56%,1) 0px, transparent 50%);
 }
+
+.image_blur_9px {
+  filter: blur(9px);
+}
+
+.glassmorphism {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.pink-ghost-button {
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+}
+
+.pink-ghost-button:hover {
+  background-color:hsla(320,55%,44%,1);
+  background-image:
+  radial-gradient(at 93% 85%, hsla(336,76%,56%,1) 0px, transparent 50%),
+  radial-gradient(at 12% 3%, hsla(320,55%,44%,1) 0px, transparent 50%),
+  radial-gradient(at 40% 20%, hsla(336,76%,57%,1) 0px, transparent 50%),
+  radial-gradient(at 80% 0%, hsla(320,55%,44%,1) 0px, transparent 50%),
+  radial-gradient(at 94% 19%, hsla(320,55%,44%,1) 0px, transparent 50%),
+  radial-gradient(at 78% 26%, hsla(336,76%,56%,1) 0px, transparent 50%);
+}
+
+.pink-button {
+  transition: background-color 0.5s ease;
+}
+
+.pink-button:hover {
+  background-color:hsla(320,55%,44%,1);
+  background-image:
+  radial-gradient(at 98% 97%, hsla(336,76%,56%,1) 0px, transparent 50%),
+  radial-gradient(at 11% 15%, hsla(320,55%,44%,1) 0px, transparent 50%),
+  radial-gradient(at 30% 10%, hsla(336,76%,57%,1) 0px, transparent 50%),
+  radial-gradient(at 9% 60%, hsla(320,55%,44%,1) 0px, transparent 50%),
+  radial-gradient(at 74% 15%, hsla(320,55%,44%,1) 0px, transparent 50%),
+  radial-gradient(at 64% 100%, hsla(336,76%,56%,1) 0px, transparent 50%);
+}
+
+.ripple {
+  position: relative; /* Required for the absolute positioning of the ripple */
+  overflow: hidden; /* Hide the ripple when it's not animating */
+}
+
+.ripple:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.ripple:hover:before {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: #e64082;
+}
