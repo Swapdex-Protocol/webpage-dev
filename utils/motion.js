@@ -171,3 +171,18 @@ export const fadeInVariant = {
     },
   },
 };
+
+export const KPICardFadeInVariant = {
+  initial: {
+    x: 0,
+    opacity: 0,
+  },
+  animate: {
+    y: -215,
+    opacity: 1,
+    transition: {
+      delay: 1,
+      duration: 1,
+    },
+  },
+};

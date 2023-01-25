@@ -1,11 +1,13 @@
 import { Footer, Navbar } from '../components';
-import { Hero, BlockchainLiveData, TrulyDecentralised, DesktopApp, MobileApp, DEX, NFTMarketplace, CTA } from '../sections';
+import { Hero, Blockchain, TrulyDecentralised, DesktopApp, MobileApp, DEX, NFTMarketplace, CTA } from '../sections';
 
 const Page = () => (
   <div className=" bg-SDX-900 overflow-hidden">
-    <Navbar />
-    <Hero />
-    <BlockchainLiveData />
+    <div className="h-screen">
+      <Navbar />
+      <Hero />
+    </div>
+    <Blockchain />
     <TrulyDecentralised />
     <DesktopApp />
     <MobileApp />

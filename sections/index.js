@@ -1,5 +1,5 @@
 import Hero from './Hero';
-import BlockchainLiveData from './BlockchainLiveData';
+import Blockchain from './Blockchain';
 import TrulyDecentralised from './TrulyDecentralised';
 import DesktopApp from './DesktopApp';
 import MobileApp from './MobileApp';
@@ -9,7 +9,7 @@ import CTA from './CTA';
 
 export {
   Hero,
-  BlockchainLiveData,
+  Blockchain,
   TrulyDecentralised,
   DesktopApp,
   MobileApp,

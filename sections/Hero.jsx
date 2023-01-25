@@ -6,7 +6,7 @@ import { staggerContainer, textVariant, fadeInVariant } from '../utils/motion';
 import Button from '../components/Button';
 
 const Hero = () => (
-  <section className={`${styles.yPaddings} h-screen relative top-5`}>
+  <section className={`${styles.yPaddings} h-full relative top-5`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -27,7 +27,7 @@ const Hero = () => (
         <motion.div variants={textVariant(1.3)}>
           <div className="flex gap-[29px]">
             <Button
-              link="www.google.com"
+              link="https://www.google.com/"
               image="/swapdex-logo-icon.svg"
               className="border border-SDX-Pink inline-flex mt-[70px] pink-ghost-button"
               imageClasses="w-[26px]"
