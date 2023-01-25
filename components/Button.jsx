@@ -4,8 +4,8 @@ import Link from 'next/link';
 
 const Button = ({ image, link, imageAlt, children, className, imageClasses, textClasses, target }) => (
   <Link href={link} target={target}>
-    <div className={`rounded-full px-[22px] py-[18px] ${className}`}>
-      <img src={image} alt={imageAlt} className={`mr-2 ${imageClasses}`} />
+    <div className={`flex flex-row rounded-full ${className}`}>
+      <img src={image} alt={imageAlt} className={`${imageClasses}`} />
       <span className={`font-medium text-[16px] leading-[20px] ${textClasses}`}>{children}</span>
     </div>
   </Link>

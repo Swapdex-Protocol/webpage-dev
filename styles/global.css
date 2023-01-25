@@ -25,9 +25,15 @@
   filter: blur(9px);
 }
 
+.image_blur_12px {
+  filter: blur(12px);
+}
+
 .glassmorphism {
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.02);
 }
 
 .pink-ghost-button {

@@ -22,11 +22,11 @@ const createApi = async () => {
 const LiveDataCard = () => {
   const [api, setApi] = useState(null);
   const [chainHeight, setChainHeight] = useState(null);
-  // const [TPS, setTPS] = useState(null);
+  const [TPS, setTPS] = useState(null);
   const [totalSupply, setTotalSupply] = useState(null);
   const [transactionFee, setTransactionFee] = useState(null);
   const [validatorNodes, setValidatorNodes] = useState(null);
-  // const [stakingRewards, setStakingRewards] = useState(null);
+  const [stakingRewards, setStakingRewards] = useState(null);
   const [totalStaked, setTotalStaked] = useState(null);
   const [sdxPrice, setSdxPrice] = useState(null);
   const [startTime, setStartTime] = useState(0);
@@ -160,7 +160,11 @@ const LiveDataCard = () => {
       };
       fetchData();
       return () => {
-        unsubscribe.unsubscribe();
+        try {
+          unsubscribe.unsubscribe();
+        } catch (error) {
+          console.log(error);
+        }
       };
     },
     [api, setApi],

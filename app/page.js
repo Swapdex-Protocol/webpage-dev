@@ -8,7 +8,6 @@ const Page = () => (
       <Hero />
     </div>
     <Blockchain />
-    <TrulyDecentralised />
     <DesktopApp />
     <MobileApp />
     <DEX />

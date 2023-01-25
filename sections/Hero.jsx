@@ -29,7 +29,7 @@ const Hero = () => (
             <Button
               link="https://www.google.com/"
               image="/swapdex-logo-icon.svg"
-              className="border border-SDX-Pink inline-flex mt-[70px] pink-ghost-button"
+              className="border border-SDX-Pink inline-flex mt-[70px] pink-ghost-button px-[22px] py-[18px] gap-2"
               imageClasses="w-[26px]"
               textClasses="text-SDX-200"
             >
@@ -38,7 +38,7 @@ const Hero = () => (
             <Button
               link="https://discord.gg/hBsxnNZgnX"
               image="/discord_white.svg"
-              className="bg-SDX-Pink border border-SDX-Pink inline-flex mt-[70px] pink-button"
+              className="bg-SDX-Pink border border-SDX-Pink inline-flex mt-[70px] pink-button px-[22px] py-[18px] gap-2"
               imageClasses="w-[26px]"
               textClasses="text-SDX-200"
               target="_blank"
