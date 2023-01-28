@@ -36,6 +36,12 @@
   border: 1px solid rgba(255, 255, 255, 0.02);
 }
 
+.glassmorphism-light {
+  background: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+}
+
 .pink-ghost-button {
   background-color: transparent;
   transition: background-color 0.5s ease;
