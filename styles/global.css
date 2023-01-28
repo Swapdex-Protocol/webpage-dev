@@ -36,6 +36,13 @@
   border: 1px solid rgba(255, 255, 255, 0.02);
 }
 
+.nft-glassmorphism {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 0.5px solid rgba(230, 64, 130, 0.6);
+}
+
 .glassmorphism-light {
   background: rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(30px);
@@ -104,4 +111,8 @@
 
 .lighten-on-hover:hover::before {
   opacity: 0;
+}
+
+.rotate-x {
+  transform: rotate3d(1, 0, 0, -5deg);
 }
