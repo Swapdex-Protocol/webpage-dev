@@ -4,7 +4,7 @@ import styles from '../styles';
 import Button from '../components/Button';
 
 const DesktopApp = () => (
-  <section className={`bg-SDX-900 ${styles.xPaddings} ${styles.yPaddings} h-screen flex flex-col`}>
+  <section id="wallet" className={`bg-SDX-900 ${styles.xPaddings} ${styles.yPaddings} h-screen flex flex-col`}>
     <div className={`flex flex-col mx-auto ${styles.innerWidth}`}>
       <span className="font-semibold text-[18px] leading-[24px] text-SDX-Pink w-5/12">DESKTOP APP</span>
       <span className="font-bold text-[60px] leading-[70px] text-SDX-200 w-5/12">Get started fast</span>

@@ -116,3 +116,30 @@
 .rotate-x {
   transform: rotate3d(1, 0, 0, -5deg);
 }
+
+.change-fill-pink {
+  transition: fill 0.5s, transform 0.3s;
+}
+.change-fill-pink:hover {
+  fill: #E64082 !important;
+  transform: translateY(-5px);
+}
+
+.link-fill-pink {
+  transition: color 0.3s,
+}
+.link-fill-pink:hover {
+  color: #E64082 !important;
+}
+
+.translate-bump {
+  transition: transform 0.3s ease-in-out;
+}
+
+.translate-bump:hover {
+  transform: translateY(-5px);
+}
+
+.translate-bump:hover:active {
+  transform: translateY(0px);
+}

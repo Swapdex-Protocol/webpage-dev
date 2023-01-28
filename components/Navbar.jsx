@@ -25,10 +25,10 @@ const Navbar = () => (
         </h2>
       </div>
       <div className="flex gap-[23px] align-middle">
-        <a href="#blockchain" className="font-regular text-[18px] leading-[24px] text-SDX-200">Blockchain</a>
-        <a href="#wallet" className="font-regular text-[18px] leading-[24px] text-SDX-200">Wallet</a>
-        <a href="#dex" className="font-regular text-[18px] leading-[24px] text-SDX-200">DEX</a>
-        <a href="#NFTMarketplace" className="font-regular text-[18px] leading-[24px] text-SDX-200">NFT Marketplace</a>
+        <a href="#blockchain" className="font-regular text-[18px] leading-[24px] text-SDX-200 hover:text-white translate-bump">Blockchain</a>
+        <a href="#wallet" className="font-regular text-[18px] leading-[24px] text-SDX-200 hover:text-white translate-bump">Wallet</a>
+        <a href="#dex" className="font-regular text-[18px] leading-[24px] text-SDX-200 hover:text-white translate-bump">DEX</a>
+        <a href="#NFTMarketplace" className="font-regular text-[18px] leading-[24px] text-SDX-200 hover:text-white translate-bump">NFT Marketplace</a>
       </div>
       <NavButton href="https://app.swapdex.network/#/swapdex/" target="_blank" className="nav-button-gradient">
         Launch App

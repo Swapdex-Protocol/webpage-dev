@@ -3,7 +3,7 @@
 import styles from '../styles';
 
 const DEX = () => (
-  <section className={`bg-white h-screen ${styles.yPaddings}`}>
+  <section id="dex" className={`bg-white h-screen ${styles.yPaddings}`}>
     <div className="relative flex flex-col w-full h-full">
       <div className={`static w-full h-full ${styles.innerWidth} mx-auto z-10`}>
         <div className="flex flex-col w-full">
@@ -25,12 +25,12 @@ const DEX = () => (
         </div>
         <div className="relative flex flex-row justify-between mx-auto mt-10">
           <p className="font-medium text-[18px] leading-[24px] text-SDX-900 w-48 my-auto">Connected to powerful networks</p>
-          <img src="/polygon-matic-logo.svg" className="h-12 my-auto" />
-          <img src="/swapdex-logo-icon.svg" className="h-12 my-auto" />
-          <img src="/bnb-bnb-logo.svg" className="h-12 my-auto" />
-          <img src="/Kusari_Logo.svg" className="h-12 my-auto" />
-          <img src="/ethereum-eth-logo.svg" className="h-12 my-auto" />
-          <img src="/solana-sol-logo.svg" className="h-12 my-auto" />
+          <img src="/polygon-matic-logo.svg" className="h-12 my-auto translate-bump" />
+          <img src="/swapdex-logo-icon.svg" className="h-12 my-auto translate-bump" />
+          <img src="/bnb-bnb-logo.svg" className="h-12 my-auto translate-bump" />
+          <img src="/Kusari_Logo.svg" className="h-12 my-auto translate-bump" />
+          <img src="/ethereum-eth-logo.svg" className="h-12 my-auto translate-bump" />
+          <img src="/solana-sol-logo.svg" className="h-12 my-auto translate-bump" />
         </div>
       </div>
       <div className="absolute bottom-0 right-0 left-0 z-0">

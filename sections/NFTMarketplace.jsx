@@ -4,7 +4,7 @@ import styles from '../styles';
 import NFTCard from '../components/NFTCard';
 
 const NFTMarketplace = () => (
-  <section className={`${styles.yPaddings} w-full h-screen bg-SDX-900`}>
+  <section id="NFTMarketplace" className={`${styles.yPaddings} w-full h-screen bg-SDX-900`}>
     <div className="flex flex-col h-full w-full">
       <div className={`flex flex-col ${styles.innerWidth} mx-auto`}>
         <p className="font-semibold text-[18px] leading-6 text-center text-SDX-Pink">NFT MARKETPLACE</p>
@@ -57,7 +57,6 @@ const NFTMarketplace = () => (
             </div>
           </div>
         </div>
-        <p>Test</p>
       </div>
     </div>
   </section>

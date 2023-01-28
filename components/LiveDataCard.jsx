@@ -170,7 +170,7 @@ const LiveDataCard = () => {
     [api, setApi],
   );
   return (
-    <div className="flex flex-col gap-[31px] w-[945px] mx-auto bg-SDX-200 rounded-[17px]">
+    <div id="blockchain" className="flex flex-col gap-[31px] w-[945px] mx-auto bg-SDX-200 rounded-[17px]">
       <div className="container flex flex-col items-center w-full mt-[19px] mb-[25px] ">
         <span className="font-semibold text-[18px] leading-[24px]">SwapDEX</span>
         <h1 className="font-bold text-[40px] leading-[48px]">Blockchain</h1>
