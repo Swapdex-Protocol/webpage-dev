@@ -22,11 +22,11 @@ const createApi = async () => {
 const LiveDataCard = () => {
   const [api, setApi] = useState(null);
   const [chainHeight, setChainHeight] = useState(null);
-  const [TPS, setTPS] = useState(null);
+  // const [TPS, setTPS] = useState(null);
   const [totalSupply, setTotalSupply] = useState(null);
   const [transactionFee, setTransactionFee] = useState(null);
   const [validatorNodes, setValidatorNodes] = useState(null);
-  const [stakingRewards, setStakingRewards] = useState(null);
+  // const [stakingRewards, setStakingRewards] = useState(null);
   const [totalStaked, setTotalStaked] = useState(null);
   const [sdxPrice, setSdxPrice] = useState(null);
   const [startTime, setStartTime] = useState(0);
@@ -37,6 +37,7 @@ const LiveDataCard = () => {
 
   useEffect(() => {
     const sdxApi = createApi().then(setApi);
+    console.log(sdxApi);
   }, []);
 
   // Fetch SDX price on CoinGecko
@@ -82,8 +83,8 @@ const LiveDataCard = () => {
         try {
           const height = await api.rpc.chain.getHeader();
           setChainHeight(height.number.toNumber().toLocaleString());
-          let lastBlockTimestamp;
-          let blockTime;
+          // let lastBlockTimestamp;
+          // let blockTime;
 
           unsubscribe = await api.rpc.chain.subscribeNewHeads(async (header) => {
             // Set Chain Height
@@ -124,6 +125,7 @@ const LiveDataCard = () => {
             setTotalSupply(formattedTotalSupply);
 
             // Transaction per Second
+            /*
             const block = await api.rpc.chain.getBlock(header.hash);
             const timestamp = await api.query.timestamp.now();
             if (lastBlockTimestamp) {
@@ -138,6 +140,7 @@ const LiveDataCard = () => {
               const tps = numTransactions / (blockTime / 1000);
               setTPS(tps.toLocaleString());
             }
+            */
 
             // Transaction Fees
             // Get the events in a block
