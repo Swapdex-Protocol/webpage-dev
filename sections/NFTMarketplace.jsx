@@ -13,7 +13,7 @@ const NFTMarketplace = () => (
         <p className="font-light text-[18px] leading-6 text-right sm:text-center text-SDX-200">Buy, sell, auction and create NFTs today!</p>
       </div>
       <div className={`grid grid-row-1 laptop-s:grid-cols-2 ${styles.innerWidth} mx-auto mt-10`}>
-        <div className="relative">
+        <div className="relative laptop-l:mb-20">
           <div className="absolute top-0 sm:top-10 left-0 bottom-0">
             <img src="/hero_ball_02_1.png" className="blur-md z-0 laptop-s:-translate-x-24 laptop-l:translate-x-0 laptop-s:scale-75" />
           </div>
@@ -44,22 +44,13 @@ const NFTMarketplace = () => (
                 <img src="/NFT-marketplace-showcase.svg" />
               </div>
             </div>
-
-            <div className="grid mobile-s:grid-cols-1 tablet-s:grid-cols-2 gap-3 laptop-l:flex laptop-l:flex-row laptop-l:justify-between mt-10">
+            <div className={`${styles.innerWidth} grid mx-auto mobile-s:grid-cols-1 tablet-s:grid-cols-2 gap-3 laptop-l:flex laptop-l:flex-row laptop-l:justify-between mt-10`}>
               <Link href="https://www.coingecko.com/en/coins/swapdex" target="_blank" className="z-10">
                 <img src="/coingecko-seeklogo-gray.svg" className="tablet-s:mx-auto" />
               </Link>
               <Link href="https://coinmarketcap.com/currencies/swapdex-sdxb/" target="_blank" className="z-10">
                 <img src="/coinmarketcap-logo-gray.svg" className="tablet-s:mr-0" />
               </Link>
-            </div>
-            <div className="grid grid-cols-3 gap-6 laptop-s:flex laptop-s:flex-row laptop-s:justify-between mt-4">
-              <img src="/polygon-matic-logo-gray.svg" className="h-[50px] object-contain z-10 tablet-s:mx-auto" />
-              <img src="/bnb-bnb-logo-gray.svg" className="h-[50px] object-contain z-10 mx-auto" />
-              <img src="/swapdex-logo-gray.svg" className="h-[50px] object-contain z-10 mobile-s:ml-auto tablet-s:mx-auto" />
-              <img src="/eth-logo-gray.svg" className="h-[50px] object-contain z-10 tablet-s:mx-auto" />
-              <img src="/solana-sol-logo-gray.svg" className="h-[50px] object-contain z-10 mx-auto" />
-              <img src="/Kusari_Logo_gray.svg" className="h-[50px] object-contain z-10 mobile-s:ml-auto tablet-s:mx-auto" />
             </div>
           </div>
         </div>

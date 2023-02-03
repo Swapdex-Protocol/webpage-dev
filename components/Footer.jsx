@@ -54,7 +54,7 @@ const Footer = () => (
             <p className="font-light text-[12px] leading-4 text-SDX-200 link-fill-pink">SDX Academy</p>
           </Link>
           <Link href="https://google.com" target="_blank">
-            <p className="font-light text-[12px] leading-4 text-SDX-200 link-fill-pink">Chian Documentation</p>
+            <p className="font-light text-[12px] leading-4 text-SDX-200 link-fill-pink">Chain Documentation</p>
           </Link>
           <Link href="https://google.com" target="_blank">
             <p className="font-light text-[12px] leading-4 text-SDX-200 link-fill-pink">NFT Documentation </p>
