@@ -49,6 +49,11 @@
   -webkit-backdrop-filter: blur(30px);
 }
 
+.ghost-button {
+  background-color: white;
+  transition: background-color 0.5s ease;
+}
+
 .pink-ghost-button {
   background-color: transparent;
   transition: background-color 0.5s ease;
@@ -140,6 +145,42 @@
   transform: translateY(-5px);
 }
 
-.translate-bump:hover:active {
-  transform: translateY(0px);
+.translate-bump {
+  animation: move-back 0.5s forwards 0.5s;
+  animation-fill-mode: backwards;
+}
+
+.translate-bump-xs {
+  transition: transform 0.3s ease-in-out;
+}
+
+.translate-bump-xs:hover {
+  transform: translateY(-2px);
+}
+
+.translate-bump-xs {
+  animation: move-back 0.5s forwards 0.5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes move-back {
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.shadow-hover {
+  transition: all 0.2s ease-in-out;
+}
+
+.shadow-hover:hover {
+  filter: drop-shadow(0 8px 5px rgb(0 0 0 / 0.1));
+}
+
+.shadow-hover-dark {
+  transition: all 0.2s ease-in-out;
+}
+
+.shadow-hover-dark:hover {
+  filter: drop-shadow(0 8px 5px rgb(0 0 0 / 0.2));
 }

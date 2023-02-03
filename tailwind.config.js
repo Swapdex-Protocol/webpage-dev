@@ -26,6 +26,37 @@ module.exports = {
         'out-flex': 'cubic-bezier(0.05, 0.6, 0.4, 0.9)',
       },
     },
+    screens: {
+      'mobile-s': '320px',
+      // => Mobile S -> 320px to 375px
+
+      'mobile-m': '375px',
+      // => Mobile M -> 375px to 425px
+
+      'mobile-l': '425px',
+      // => Mobile L -> 425px to 640px
+
+      sm: '640px',
+      // => @media -> 640px to 768px
+
+      'tablet-s': '768px',
+      // => Tablet -> 768px to 1024px
+
+      'laptop-s': '1024px',
+      // => Laptop -> 1024px to 1280px
+
+      xl: '1280px',
+      // => @media -> 1280px to 1440px
+
+      'laptop-l': '1440px',
+      // => Laptop L
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+
+      '4k': '2560px',
+      // => 4k res
+    },
   },
   plugins: [],
 };

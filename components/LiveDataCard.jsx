@@ -170,22 +170,19 @@ const LiveDataCard = () => {
     [api, setApi],
   );
   return (
-    <div id="blockchain" className="flex flex-col gap-[31px] w-[945px] mx-auto bg-SDX-200 rounded-[17px]">
-      <div className="container flex flex-col items-center w-full mt-[19px] mb-[25px] ">
-        <span className="font-semibold text-[18px] leading-[24px]">SwapDEX</span>
-        <h1 className="font-bold text-[40px] leading-[48px]">Blockchain</h1>
-        <span className="font-semibold text-[18px] leading-[24px]">Live Data</span>
+    <div id="blockchain" className="grid grid-cols-2 tablet-s:grid-cols-4 gap-5 px-4 pb-5 tablet-s:mx-4 laptop-s:px-24 laptop-s:pb-24 laptop-s:w-[900px] laptop-s:mx-auto laptop-l:w-[900px] mx-auto bg-SDX-200 rounded-[17px] z-50 drop-shadow-md">
+      <div className="flex col-span-2 tablet-s:col-span-4 flex-col items-center w-full mt-2 mb-2 tablet-s:mt-[19px] tablet-s:mb-[25px] z-50">
+        <span className="font-semibold text-[18px] leading-[24px] z-50">SwapDEX</span>
+        <h1 className="font-bold text-[40px] leading-[48px] z-50">Blockchain</h1>
+        <span className="font-semibold text-[18px] leading-[24px] z-50">Live Data</span>
       </div>
-      <div className="flex mx-auto justify-between gap-[31px]">
-        <SmallKPIField title="Chain Height" data={chainHeight} />
-        <SmallKPIField title="Block Time" data={`${elapsedTime} s`} />
-        <SmallKPIField title="Transaction Fee" data={`$ ${transactionFee}`} />
-        <SmallKPIField title="Validator Nodes" data={validatorNodes} />
-      </div>
-      <div className="flex mx-auto justify-between gap-[31px] mb-[84px]">
-        <LargeKPIField title="Total Supply" data={`SDX ${totalSupply}`} />
-        <LargeKPIField title="Total Value Staked" data={`USD ${totalStaked}`} />
-      </div>
+
+      <SmallKPIField title="Chain Height" data={chainHeight} />
+      <SmallKPIField title="Block Time" data={`${elapsedTime} s`} />
+      <SmallKPIField title="Transaction Fee" data={`$ ${transactionFee}`} />
+      <SmallKPIField title="Validator Nodes" data={validatorNodes} />
+      <LargeKPIField title="Total Supply" data={`SDX ${totalSupply}`} />
+      <LargeKPIField title="Total Value Staked" data={`USD ${totalStaked}`} />
     </div>
 
   );

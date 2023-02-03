@@ -1,71 +1,90 @@
 'use client';
 
+import React, { useState, useEffect } from 'react';
+
 import { motion } from 'framer-motion';
 import styles from '../styles';
 import { staggerContainer, textVariant, fadeInVariant } from '../utils/motion';
 import Button from '../components/Button';
+import { LiveDataCard } from '../components';
 
-const Hero = () => (
-  <section className={`${styles.yPaddings} h-full relative top-5`}>
-    <motion.div
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex flex-col`}
-    >
-      <div className="flex justify-center items-center flex-col relative z-10 pt-[70px]">
-        <motion.div variants={textVariant(1.0)} className="font-semibold text-[18px] leading-[24px] text-SDX-200 text-center pb-[27px]">
-          DECENTRALISED FINANCE ECOSYSTEM
+const Hero = () => {
+  const [animateValue, setAnimateValue] = useState({ y: 0, opacity: 1 });
+  // const [yTranslate, setYTranslate] = useState((window.innerHeight * -1) / 9);
+
+  useEffect(() => {
+    if (window.innerHeight > 740) {
+      setAnimateValue({ y: 0, opacity: 1 });
+    } else {
+      setAnimateValue({ y: 0, opacity: 1 });
+    }
+  }, []);
+
+  return (
+    <section className="sm:pt-16 xs:pt-8 pt-12 relative laptop-s:top-5 z-50">
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.25 }}
+        className={`${styles.innerWidth} mx-auto flex flex-col`}
+      >
+        <div className="flex flex-col relative z-10 px-4 gap-6 tablet-s:gap-16 tablet-s:justify-center tablet-s:items-center tablet-s:pt-[70px]">
+          <motion.div variants={textVariant(1.0)} className="font-semibold text-[18px] leading-[24px] text-SDX-200 text-start tablet-s:text-center">
+            DECENTRALISED FINANCE ECOSYSTEM
+          </motion.div>
+          <motion.h1 variants={textVariant(1.1)} className="font-bold text-[50px] tablet-s:text-[60px] leading-[60px] tablet-s:leading-[70px] text-SDX-200 text-start tablet-s:text-center">
+            Robust for Developers.<br />Fast for Traders.
+          </motion.h1>
+          <motion.div variants={textVariant(1.2)} className="font-extralight text-[16px] tablet-s:text-[18px] leading-[20px] tablet-s:leading-6 text-SDX-200 text-start tablet-s:text-center tablet-s:w-[570px]">
+            SDX Governance Coin, Powering Web3 NFT and Decentralised Finance Applications and Connecting Major Blockchains, Fast, Secure and With Near-Zero Fees.
+          </motion.div>
+          <motion.div variants={textVariant(1.3)}>
+            <div className="flex flex-col tablet-s:flex-row gap-3 mt-5">
+              <Button
+                link="#dex"
+                image="/swapdex-logo-icon.svg"
+                className="border border-SDX-Pink w-full tablet-s:mt-[70px] pink-ghost-button px-[22px] py-[18px]"
+                imageClasses="w-[26px] tablet-s:w-[30px]"
+                textClasses="text-SDX-200 my-auto"
+              >
+                Get Started
+              </Button>
+              <Button
+                link="https://discord.gg/hBsxnNZgnX"
+                image="/discord_white.svg"
+                className="bg-SDX-Pink border border-SDX-Pink w-full tablet-s:mt-[70px] pink-button px-[22px] py-[18px]"
+                imageClasses="w-[26px] tablet-s:w-[30px]"
+                textClasses="text-SDX-200 my-auto"
+                target="_blank"
+              >
+                Join Discord
+              </Button>
+            </div>
+          </motion.div>
+        </div>
+      </motion.div>
+      <div className="w-full flex absolute top-0 right-0 left-0 bg-SDX-900 opacity-95">
+        <motion.div variants={fadeInVariant} initial="initial" animate="animate" className="mx-auto inline-flex z-0 image_blur_9px overflow-hidden">
+          <img
+            src="/hero_ball_02.png"
+            alt="DeFi_ball_02"
+            className="rotate-[15deg] w-[250px] tablet-s:w-[550px] mt-14 laptop-s:mt-0 object-contain laptop-s:w-full mx-auto laptop-s:-translate-x-[70px] laptop-s:translate-y-[100px]"
+          />
         </motion.div>
-        <motion.h1 variants={textVariant(1.1)} className="font-bold text-[60px] leanding-[70px] text-SDX-200 text-center pb-[27px]">
-          Robust for Developers.<br />Fast for Traders.
-        </motion.h1>
-        <motion.div variants={textVariant(1.2)} className="font-extralight text-[18px] leading-[24px] text-SDX-200 text-center w-[570px]">
-          SDX Governance Coin, Powering Web3 NFT and Decentralised Finance Applications and Connecting Major Blockchains, Fast, Secure and With Near-Zero Fees.
-        </motion.div>
-        <motion.div variants={textVariant(1.3)}>
-          <div className="flex gap-[29px]">
-            <Button
-              link="https://www.google.com/"
-              image="/swapdex-logo-icon.svg"
-              className="border border-SDX-Pink inline-flex mt-[70px] pink-ghost-button px-[22px] py-[18px] gap-2"
-              imageClasses="w-[26px]"
-              textClasses="text-SDX-200"
-            >
-              Get Started
-            </Button>
-            <Button
-              link="https://discord.gg/hBsxnNZgnX"
-              image="/discord_white.svg"
-              className="bg-SDX-Pink border border-SDX-Pink inline-flex mt-[70px] pink-button px-[22px] py-[18px] gap-2"
-              imageClasses="w-[26px]"
-              textClasses="text-SDX-200"
-              target="_blank"
-            >
-              Join Discord
-            </Button>
-          </div>
+        <motion.div variants={fadeInVariant} initial="initial" animate="animate" className="mx-auto inline-flex z-0 image_blur_9px overflow-hidden">
+          <img
+            src="/hero_ball_01.png"
+            alt="DeFi_ball_01"
+            className="-rotate-[55deg] mt-[200px] object-contain laptop-s:w-5/6 mx-auto laptop-s:translate-x-[70px] laptop-s:translate-y-[-200px]"
+          />
         </motion.div>
       </div>
-    </motion.div>
-    <div className="w-full flex absolute top-0 right-0 left-0 bg-SDX-900 opacity-95">
-      <motion.div variants={fadeInVariant} initial="initial" animate="animate" className="mx-auto inline-flex z-0 image_blur_9px overflow-hidden">
-        <img
-          src="/hero_ball_02.png"
-          alt="DeFi_ball_02"
-          className="rotate-[15deg] object-contain w-full mx-auto -translate-x-[70px] translate-y-[100px]"
-        />
+      <motion.div className="mt-12 mobile-l:mt-28" initial={{ y: 0, opacity: 0 }} animate={animateValue} transition={{ delay: 1.6, duration: 1, type: 'spring' }}>
+        <LiveDataCard />
       </motion.div>
-      <motion.div variants={fadeInVariant} initial="initial" animate="animate" className="mx-auto inline-flex z-0 image_blur_9px overflow-hidden">
-        <img
-          src="/hero_ball_01.png"
-          alt="DeFi_ball_01"
-          className="-rotate-[55deg] object-contain w-5/6 mx-auto translate-x-[70px] translate-y-[-200px]"
-        />
-      </motion.div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default Hero;

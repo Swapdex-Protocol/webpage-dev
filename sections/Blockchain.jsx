@@ -3,46 +3,37 @@
 import { motion } from 'framer-motion';
 import styles from '../styles';
 
-import { KPICardFadeInVariant, staggerContainer, textVariant } from '../utils/motion';
-import { LiveDataCard, ExploreCard } from '../components';
+import { staggerContainer, textVariant } from '../utils/motion';
+import { ExploreCard } from '../components';
 
 const Blockchain = () => (
-  <section className={`${styles.yPaddings} flex flex-col h-screen relative top-5 bg-SDX-300`}>
-    <motion.div
-      variants={KPICardFadeInVariant}
-      initial="initial"
-      animate="animate"
-      viewport={{ once: true }}
-    >
-      <LiveDataCard />
-    </motion.div>
-
+  <section className={`${styles.yPaddings} ${styles.xPaddings} flex flex-col mobile-s:-top-5 relative bg-SDX-300`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex flex-col translate-y-[-150px]`}
+      className={`${styles.innerWidth} tablet-s:mt-56 tablet-s:mx-auto flex flex-col`}
     >
-      <div className="flex justify-center items-center flex-col relative z-10">
-        <motion.div variants={textVariant(0)} className="font-semibold text-[18px] leading-[24px] text-SDX-Pink text-center">
+      <div className="flex flex-col tablet-s:justify-center tablet-s:items-center laptop-s:mt-10">
+        <motion.div variants={textVariant(0)} className="font-semibold text-[18px] leading-[24px] text-SDX-Pink tablet-s:text-center">
           THE SWAPDEX ECOSYSTEM IS
         </motion.div>
-        <motion.h1 variants={textVariant(0.1)} className="font-bold text-[60px] leanding-[70px] text-SDX-900 text-center">
+        <motion.h1 variants={textVariant(0.1)} className="font-bold whitespace-normal text-[40px] leading-[45px] mobile-m:text-[50px] mobile-m:leading-[60px] my-3 tablet-s:text-[60px] tablet-s:leanding-[70px] tablet-s:text-center">
           Truly Decentralised
         </motion.h1>
-        <motion.div variants={textVariant(0.2)} className="font-light text-[18px] leading-[24px] text-SDX-900 text-center w-[570px]">
+        <motion.div variants={textVariant(0.2)} className="font-light text-[18px] leading-[24px] text-SDX-900 tablet-s:text-center mobile-l:w-[350px] laptop-s:w-[570px]">
           Learn how to contribute to the decentralisation of SwapDEX
         </motion.div>
       </div>
     </motion.div>
 
-    <div className={`${styles.innerWidth} mx-auto flex flex-row gap-[29px] translate-y-[-100px]`}>
-      <div className="flex mx-auto w-1/2">
-        <ExploreCard className="explore-validator-bg-image" link="https://docs.swapdex.network/validator-guides/validator/" target="_blank" title="Become a Validator" text="Join us in our mission to built a truly decentralised and censorship free network and take your place among the SwapDEX validators" />
+    <div className={`${styles.innerWidth} mt-5 tablet-s:mt-20 laptop-s:mx-auto flex flex-col tablet-s:flex-row gap-4`}>
+      <div className="flex laptop-s:mx-auto laptop-s:w-1/2">
+        <ExploreCard className="explore-validator-bg-image translate-bump shadow-hover-dark" link="https://docs.swapdex.network/validator-guides/validator/" target="_blank" title="Become a Validator" text="Join us in our mission to built a truly decentralised and censorship free network and take your place among the SwapDEX validators" />
       </div>
-      <div className="flex mx-auto w-1/2">
-        <ExploreCard className="explore-governance-bg-image" link="https://docs.swapdex.network/what-to-try/democracy/" target="_blank" title="Decentralised Governance" text="Join the movement towards true decentralisation by participating in the governance. Your voice and vote matters in shaping the future" />
+      <div className="flex laptop-s:mx-auto laptop-s:w-1/2">
+        <ExploreCard className="explore-governance-bg-image translate-bump shadow-hover-dark" link="https://docs.swapdex.network/what-to-try/democracy/" target="_blank" title="Decentralised Governance" text="Join the movement towards true decentralisation by participating in the governance. Your voice and vote matters in shaping the future" />
       </div>
     </div>
   </section>

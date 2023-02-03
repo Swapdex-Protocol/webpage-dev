@@ -16,12 +16,12 @@ const CTA = () => (
           And gain access to a community-run blockchain, cross-chain limit-order DEX and NFT marketplace
         </p>
       </div>
-      <div className="flex mt-8 mb-28">
-        <div className="mx-auto flex flex-row gap-4">
+      <div className="flex mt-8 sm:mb-28">
+        <div className="sm:mx-auto w-full flex flex-col sm:flex-row gap-4 tablet-s:justify-center">
           <MobileDownloadButton
             link="https://www.apple.com/"
             logo="/swapdex-logo-icon.svg"
-            className="border border-SDX-Pink pink-ghost-button my-auto py-4 px-6 gap-2 w-full translate-bump"
+            className="border border-SDX-Pink ghost-button my-auto py-4 px-6 gap-2 w-full justify-center items-algin-center translate-bump shadow-hover"
             logoClasses="w-[26px] h-[26px]"
             supportText="Launch in your browser"
             mainText="Launch App"
@@ -30,8 +30,8 @@ const CTA = () => (
           />
           <MobileDownloadButton
             link="https://www.apple.com/"
-            logo="/Apple_logo_pink.svg"
-            className="border border-SDX-Pink pink-ghost-button my-auto py-4 px-6 gap-2 w-full translate-bump"
+            logo="/Apple_logo_black.svg"
+            className="border border-SDX-Pink ghost-button my-auto py-4 px-6 gap-2 w-full justify-center items-algin-center translate-bump shadow-hover"
             logoClasses="w-[26px] h-[26px]"
             supportText="Download on the"
             mainText="App Store"
@@ -41,7 +41,7 @@ const CTA = () => (
           <MobileDownloadButton
             link="https://www.google.com/"
             logo="/Google_Play_2022_icon.svg"
-            className="border border-SDX-Pink pink-ghost-button my-auto py-4 px-6 gap-2 translate-bump"
+            className="border border-SDX-Pink ghost-button my-auto py-4 px-6 gap-2 justify-center items-algin-center translate-bump shadow-hover"
             logoClasses="w-[26px] h-[26px]"
             supportText="GET IT ON"
             mainText="Google Play"
