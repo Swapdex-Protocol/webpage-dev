@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import { ApiPromise, WsProvider } from '@polkadot/api';
-import Web3 from 'web3';
 import axios from 'axios';
 
 import SmallKPIField from './SmallKPIField';
@@ -73,6 +72,10 @@ const LiveDataCard = () => {
       }
     }, 100);
     setIntervalId(id);
+
+    return () => {
+      clearInterval(id);
+    };
   }, [chainHeight]);
 
   // Fetching Chain Data
@@ -97,8 +100,8 @@ const LiveDataCard = () => {
             // Total Amount Staked
             const currentEra = await api.query.staking.currentEra();
             const weiTotal = await api.query.staking.erasTotalStake(currentEra.unwrap());
-            const web3 = new Web3();
-            const etherTotal = web3.utils.fromWei(weiTotal, 'ether');
+            // const web3 = new Web3();
+            const etherTotal = weiTotal / 10 ** 18;
             const parsedTotal = parseInt(etherTotal, 10) * sdxPrice;
             const formattedTotalStake = parsedTotal.toLocaleString(undefined, { maximumFractionDigits: 2 });
             setTotalStaked(formattedTotalStake);
@@ -119,7 +122,7 @@ const LiveDataCard = () => {
 
             // Total Supply (issuance)
             const res = await api.query.balances.totalIssuance();
-            const resEth = web3.utils.fromWei(res, 'ether');
+            const resEth = res / 10 ** 18;
             const parsedTotalSupply = parseFloat(resEth, 10);
             const formattedTotalSupply = parsedTotalSupply.toLocaleString(undefined, { maximumFractionDigits: 2 });
             setTotalSupply(formattedTotalSupply);
@@ -148,7 +151,7 @@ const LiveDataCard = () => {
             const recipient = '5HNMF6tXT2kMwrGRM5VyiPQEndwsD7EoZATExm6hs2HDQtGF';
             const info = await api.tx.balances.transfer(recipient, 123).paymentInfo(sender);
             const weiFee = info.partialFee.toString();
-            const sdxFee = web3.utils.fromWei(weiFee, 'ether');
+            const sdxFee = weiFee / 10 ** 18;
             const parsedFee = parseFloat(sdxFee, 10);
             const parsedPrice = parseFloat(sdxPrice, 10);
             const txFee = parsedFee * parsedPrice;
