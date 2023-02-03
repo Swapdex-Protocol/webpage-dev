@@ -72,10 +72,6 @@ const LiveDataCard = () => {
       }
     }, 100);
     setIntervalId(id);
-
-    return () => {
-      clearInterval(id);
-    };
   }, [chainHeight]);
 
   // Fetching Chain Data
