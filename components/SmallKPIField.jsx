@@ -7,7 +7,10 @@ const SmallKPIField = ({ title, data }) => (
         <span className="w-[58px] font-semibold mobile-m:text-[18px] mobile-m:leading-[24px] tablet-s:text-[20px] tablet-s:leading-7 text-SDX-900">
           {title}
         </span>
-        <div className="rounded-full bg-lime-500 w-[11px] h-[11px]" />
+        <span className="flex">
+          <span className="absolute rounded-full bg-lime-500 w-[11px] h-[11px] animate-ping opacity-75" />
+          <span className="relative rounded-full bg-lime-500 w-[11px] h-[11px]" />
+        </span>
       </div>
       <span className="flex w-full justify-end mb-[17px] font-semibold text-[18px] leading-5 mobile-m:text-[24px] mobile-m:leading-[32px] tablet-s:text-[22px] tablet-s:leading-8 text-SDX-900">
         {data}

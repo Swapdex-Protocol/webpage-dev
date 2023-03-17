@@ -28,9 +28,7 @@ const LiveDataCard = () => {
   // const [stakingRewards, setStakingRewards] = useState(null);
   const [totalStaked, setTotalStaked] = useState(null);
   const [sdxPrice, setSdxPrice] = useState(null);
-  const [startTime, setStartTime] = useState(0);
   const [elapsedTime, setElapsedTime] = useState(0);
-  const [intervalId, setIntervalId] = useState(null);
 
   let unsubscribe = { unsubscribe: () => {} };
 
@@ -58,20 +56,21 @@ const LiveDataCard = () => {
 
   // Measure Blocktime
   useEffect(() => {
-    setStartTime(Date.now());
     setElapsedTime(0);
-    clearInterval(intervalId);
+    let localStartTime = 0;
     const id = setInterval(() => {
-      if (startTime === 0) {
-        setStartTime(Date.now());
-      }
-      if (startTime !== 0) {
-        const time = (Date.now() - startTime) / 1000;
+      if (localStartTime === 0) {
+        localStartTime = Date.now();
+      } else {
+        const time = (Date.now() - localStartTime) / 1000;
         const parsedTime = time.toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 });
         setElapsedTime(parsedTime);
       }
     }, 100);
-    setIntervalId(id);
+
+    return () => {
+      clearInterval(id);
+    };
   }, [chainHeight]);
 
   // Fetching Chain Data

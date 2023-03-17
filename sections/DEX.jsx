@@ -8,7 +8,7 @@ const DEX = () => (
       <div className={`static w-full h-full ${styles.innerWidth} mx-auto z-10`}>
         <div className="flex flex-col w-full">
           <div className="w-full">
-            <p className="font-semibold text-[18px] leading-[24px] text-SDX-Pink">LIMIT-ORDER DEX</p>
+            <p className="font-semibold text-[18px] leading-[24px] text-SDX-Pink">LIMIT-ORDER DEX (COMING SOON)</p>
             <h1 className="font-bold text-[30px] leading-[35px] mobile-m:text-[40px] mobile-m:leading-[48px] text-SDX-900">Trade on the most decentralised limit-order DEX, where power belongs to the people</h1>
             <p className="font-medium text-[18px] leading-[24px] text-SDX-900 mt-2">Unlock the true power of decentralisation</p>
           </div>
@@ -20,7 +20,7 @@ const DEX = () => (
               <div className="h-3 w-3 rounded-full bg-amber-500" />
               <div className="h-3 w-3 rounded-full bg-green-500" />
             </div>
-            <img src="/DEX-Showcase_03.png" />
+            <img src="/DEX-Showcase_03.webp" />
           </div>
         </div>
         <div className="relative grid grid-cols-3 laptop-s:grid-cols-6 justify-items-center laptop-s:justify-between mx-auto tablet-s:mt-10 laptop-s:mt-5 tablet-s:gap-6">
@@ -33,9 +33,9 @@ const DEX = () => (
           <img src="/solana-sol-logo.svg" className="mobile-s:h-12 tablet-s:h-16 m-4 sm:my-auto translate-bump shadow-hover-dark" />
         </div>
       </div>
-      <div className="absolute mobile-s:w-[1000px] laptop-l:w-full mobile-s:mt-48 mobile-s:-translate-x-40 laptop-s:-translate-x-0 laptop-s:mt-[195px] laptop-s:scale-105 sm:mt-0 bottom-0 top-0 right-0 left-0 z-0">
+      <div className="absolute mobile-s:w-[1000px] laptop-l:w-full mobile-s:mt-48 mobile-s:-translate-x-40 laptop-s:-translate-x-0 laptop-s:mt-[195px] laptop-s:scale-75 sm:mt-0 bottom-0 top-0 right-0 left-0 z-0">
         <img
-          src="/DEX_bg.png"
+          src="/DEX_bg.webp"
           alt="swapdex DeFi"
           className="sm:mx-auto h-full object-contain z-0"
         />

@@ -7,7 +7,7 @@ const Page = () => (
       <Navbar />
       <Hero />
     </div>
-    <div className="z-0 tablet-s:-translate-y-56">
+    <div className="z-10 tablet-s:-translate-y-56">
       <Blockchain />
     </div>
     <DesktopApp />

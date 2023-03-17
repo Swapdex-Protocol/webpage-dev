@@ -4,8 +4,8 @@ const NFTCard = () => (
   <div className="flex flex-col sm:h-[648px] sm:w-[439px] rounded-3xl nft-glassmorphism tablet-s:mx-auto">
     <div className="relative mt-3 mr-3 ml-3 mobile-m:mt-5 mobile-m:mr-5 mobile-m:ml-5">
       <img
-        src="/26_anim.gif"
-        className="rounded-[20px]"
+        src="/NFT_26.webp"
+        className="rounded-[20px] object-contain"
       />
       <div className="absolute top-3 right-3">
         <div className="flex flex-row justify-between gap-2 rounded-full backdrop-blur-xl py-1 px-3">
