@@ -282,3 +282,14 @@
   width: calc(100% -2px);
   z-index: 2;
 }
+
+.blockchain-gradient {
+  background-color:hsla(225,0%,100%,1);
+  background-image:
+  radial-gradient(at 78% 40%, hsla(333,86%,65%,0.94) 0px, transparent 50%),
+  radial-gradient(at 96% 14%, hsla(217,100%,49%,1) 0px, transparent 50%),
+  radial-gradient(at 33% 76%, hsla(333,87%,65%,0.94) 0px, transparent 50%),
+  radial-gradient(at 12% 32%, hsla(27,0%,100%,1) 0px, transparent 50%),
+  radial-gradient(at 54% 71%, hsla(0,0%,100%,1) 0px, transparent 50%),
+  radial-gradient(at 6% 95%, hsla(217,100%,49%,1) 0px, transparent 50%);
+}

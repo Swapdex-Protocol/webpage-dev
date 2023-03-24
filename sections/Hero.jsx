@@ -20,14 +20,6 @@ const Hero = () => {
     }
   }, []);
 
-  const blob = document.getElementById('blob');
-  document.body.onpointermove = (event) => {
-    const { clientX } = event;
-    blob.animate({
-      left: `${clientX}px`,
-    }, { duration: 3000, fill: 'forwards' });
-  };
-
   return (
     <section className="sm:pt-16 xs:pt-8 pt-12 relative laptop-s:top-5 z-50">
       <motion.div
@@ -82,7 +74,6 @@ const Hero = () => {
           />
         </motion.div>
       </div>
-      <div className="bg-gradient-to-r from-purple-500 to-pink-500 z-10" id="blob" />
       <motion.div className="mt-12 z-20 mobile-l:mt-28" initial={{ y: 0, opacity: 0 }} animate={animateValue} transition={{ delay: 1.6, duration: 1, type: 'spring' }}>
         <LiveDataCard />
       </motion.div>
