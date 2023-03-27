@@ -1,14 +1,32 @@
 'use client';
 
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import styles from '../styles';
 
 import { staggerContainer, textVariant } from '../utils/motion';
-import { BlockchainButton } from '../components';
 
 const Blockchain = () => {
-  const handleClick = () => {
-    console.log('clicked');
+  const [button01IsClicked, setButton01IsClicked] = useState(true);
+  const [button02IsClicked, setButton02IsClicked] = useState(false);
+  const [button03IsClicked, setButton03IsClicked] = useState(false);
+
+  const handleClickButton01 = () => {
+    setButton01IsClicked(true);
+    setButton02IsClicked(false);
+    setButton03IsClicked(false);
+  };
+
+  const handleClickButton02 = () => {
+    setButton01IsClicked(false);
+    setButton02IsClicked(true);
+    setButton03IsClicked(false);
+  };
+
+  const handleClickButton03 = () => {
+    setButton01IsClicked(false);
+    setButton02IsClicked(false);
+    setButton03IsClicked(true);
   };
 
   return (
@@ -35,39 +53,72 @@ const Blockchain = () => {
               </motion.div>
             </div>
           </motion.div>
-          <div className={`${styles.innerWidth} tablet-s:mt-56 tablet-s:mx-auto flex flex-row justify-between align-middle`}>
+
+          <div className={`${styles.innerWidth} ${styles.yPaddings} mx-auto`}>
+            <div className=" flex flex-row justify-between gap-5">
+              <div className="flex flex-col rounded-xl px-3 py-3 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.2] hover:bg-white/80 backdrop-blur-xl">
+                <h3 className="text-2xl leading-7 font-bold text-SDX-900">Independent</h3>
+                <span className="text-lg leading-5 font-light text-SDX-900">Maintaining independence is crucial for a truly decentralized blockchain, as it ensures the network remains trustworthy and free from outside influence. When a blockchain is funded by large VCs or other centralized entities, there's always the risk that these entities will try to influence the direction of the project to suit their own interests. This could lead to centralization, which goes against the very ethos of blockchain technology.</span>
+              </div>
+              <div className="flex flex-col rounded-xl px-3 py-3 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.2] hover:bg-white/80 backdrop-blur-xl">
+                <h3 className="text-2xl leading-7 font-bold text-SDX-900">Open-Source</h3>
+                <span className="text-lg leading-5 font-light text-SDX-900"> This is some open-source stuff at SwapDEX - LFG!!!</span>
+              </div>
+              <div className="flex flex-col rounded-xl px-3 py-3 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.2] hover:bg-white/80 backdrop-blur-xl">
+                <h3 className="text-2xl leading-7 font-bold text-SDX-900">Free</h3>
+                <span className="text-lg leading-5 font-light text-SDX-900"> This is some free stuff at SwapDEX - LFG!!!</span>
+              </div>
+            </div>
+          </div>
+
+          <div className={`${styles.innerWidth} mx-auto flex flex-row justify-between align-middle`}>
             <span className="font-bold text-[30px] leading-[34px] text-SDX-900">SwapDEX in a nutshell</span>
             <div className="flex flex-row gap-4">
-              <BlockchainButton
-                buttonName="Button 01"
-                className="px-[10px] py-[10px]"
-                textClasses="text-SDX-900 font-light my-auto"
-              />
-              <BlockchainButton
-                link="#wallet"
-                buttonName="Button 02"
-                className="px-[10px] py-[10px]"
-                textClasses="text-SDX-900 font-light my-auto"
-              />
-              <BlockchainButton
-                link="#wallet"
-                buttonName="Button 03"
-                className="px-[10px] py-[10px]"
-                textClasses="text-SDX-900 font-light my-auto"
-              />
+              <div
+                className={`flex rounded-xl cursor-pointer border-2 ${button01IsClicked ? 'border-SDX-Pink' : 'border-white'} transition ease-in-out delay-75 bg-white/[0.2] hover:bg-white/80 backdrop-blur-xl px-[10px] py-[10px]`}
+                onClick={handleClickButton01}
+              >
+                <div className="flex mx-auto gap-2">
+                  <span className="text-[16px] leading-[20px] tablet-s:text-[18px] tablet-s:leading-5 text-SDX-900 font-light my-auto">Button 01</span>
+                </div>
+              </div>
+
+              <div
+                className={`flex rounded-xl cursor-pointer border-2 ${button02IsClicked ? 'border-SDX-Pink' : 'border-white'} transition ease-in-out delay-75 bg-white/[0.2] hover:bg-white/80 backdrop-blur-xl px-[10px] py-[10px]`}
+                onClick={handleClickButton02}
+              >
+                <div className="flex mx-auto gap-2">
+                  <span className="text-[16px] leading-[20px] tablet-s:text-[18px] tablet-s:leading-5 text-SDX-900 font-light my-auto">Button 02</span>
+                </div>
+              </div>
+
+              <div
+                className={`flex rounded-xl cursor-pointer border-2 ${button03IsClicked ? 'border-SDX-Pink' : 'border-white'} transition ease-in-out delay-75 bg-white/[0.2] hover:bg-white/80 backdrop-blur-xl px-[10px] py-[10px]`}
+                onClick={handleClickButton03}
+              >
+                <div className="flex mx-auto gap-2">
+                  <span className="text-[16px] leading-[20px] tablet-s:text-[18px] tablet-s:leading-5 text-SDX-900 font-light my-auto">Button 03</span>
+                </div>
+              </div>
             </div>
           </div>
           <div className={`${styles.innerWidth} tablet-s:mt-5 tablet-s:mx-auto flex flex-row justify-between align-middle`}>
             <div className="w-1/2 h-80 border-2 border-white bg-white/80 rounded-l-2xl overflow-hidden">
               <img
-                src="/desktop_app.png"
+                src={`${button01IsClicked ? '/desktop_app.png' : button02IsClicked ? '/Mobile_Wallet_Showcase.webp' : '/DEX-Showcase_03.webp'}`}
                 alt="Blockchain"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-1/2 rounded-r-2xl border-2 border-white bg-white/80 py-14 px-10">
-              <h2 className="font-bold text-2xl text-SDX-900 mb-10">Heading</h2>
-              <span className="font-light text-lg text-SDX-900">TIt’s time to bridge the digital and physical. Anybodies helps established brands like Toys’R’Us connect real-life places and products with NFTs.</span>
+              <h2 className={`${button01IsClicked ? '' : 'hidden'} font-bold text-2xl text-SDX-900 mb-10`}>Heading 01</h2>
+              <h2 className={`${button02IsClicked ? '' : 'hidden'} font-bold text-2xl text-SDX-900 mb-10`}>Heading 02</h2>
+              <h2 className={`${button03IsClicked ? '' : 'hidden'} font-bold text-2xl text-SDX-900 mb-10`}>Heading 03</h2>
+
+              <span className={`${button01IsClicked ? '' : 'hidden'} font-light text-lg text-SDX-900`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus lorem, dignissim vitae ex quis, mattis egestas sem. Aenean eu arcu a lorem varius egestas eget vel turpis.</span>
+              <span className={`${button02IsClicked ? '' : 'hidden'} font-light text-lg text-SDX-900`}>Curabitur sit amet scelerisque justo. Ut imperdiet consequat finibus.</span>
+              <span className={`${button03IsClicked ? '' : 'hidden'} font-light text-lg text-SDX-900`}>Fusce bibendum sollicitudin vulputate. Nam at augue consectetur, hendrerit nibh in, lacinia sem.</span>
+
             </div>
           </div>
         </div>
