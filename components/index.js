@@ -9,7 +9,6 @@ import NFTCard from './NFTCard';
 import SmallKPIField from './SmallKPIField';
 import Footer from './Footer';
 import LiveDataCard from './LiveDataCard';
-import BlockchainButton from './BlockchainButton';
 
 export {
   Navbar,
@@ -23,5 +22,4 @@ export {
   SmallKPIField,
   Footer,
   LiveDataCard,
-  BlockchainButton,
 };

@@ -49,24 +49,37 @@ const Blockchain = () => {
                 True Decentralisation
               </motion.h1>
               <motion.div variants={textVariant(0.2)} className="font-light text-[18px] leading-[24px] text-SDX-900 tablet-s:text-center mobile-l:w-[350px] laptop-s:w-[570px]">
-                Independent. Open-Source. Free.
+                Independent. Open-Source. Transparent.
               </motion.div>
             </div>
           </motion.div>
 
           <div className={`${styles.innerWidth} ${styles.yPaddings} mx-auto`}>
-            <div className=" flex flex-row justify-between gap-5">
-              <div className="flex flex-col rounded-xl px-3 py-3 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.2] hover:bg-white/80 backdrop-blur-xl">
-                <h3 className="text-2xl leading-7 font-bold text-SDX-900">Independent</h3>
-                <span className="text-lg leading-5 font-light text-SDX-900">Maintaining independence is crucial for a truly decentralized blockchain, as it ensures the network remains trustworthy and free from outside influence. When a blockchain is funded by large VCs or other centralized entities, there's always the risk that these entities will try to influence the direction of the project to suit their own interests. This could lead to centralization, which goes against the very ethos of blockchain technology.</span>
+            <div className="flex flex-row justify-between gap-5">
+              <div className="relative">
+                <div className="absolute rounded-full w-6 h-6 bg-SDX-Pink z-0 blur-lg" />
+                <div className="z-10 flex flex-col rounded-xl w-full px-6 py-3 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.2] hover:bg-white/80 backdrop-blur-xl">
+                  <h3 className="font-semibold mobile-m:text-[18px] mobile-m:leading-[24px] tablet-s:text-[20px] tablet-s:leading-7 text-SDX-900">Independent</h3>
+                  <span className="font-light text-[18px] leading-[24px] text-SDX-900">Maintaining independence is crucial for swapdex, as it ensures the network remains trustworthy and free from outside influence</span>
+                </div>
               </div>
-              <div className="flex flex-col rounded-xl px-3 py-3 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.2] hover:bg-white/80 backdrop-blur-xl">
-                <h3 className="text-2xl leading-7 font-bold text-SDX-900">Open-Source</h3>
-                <span className="text-lg leading-5 font-light text-SDX-900"> This is some open-source stuff at SwapDEX - LFG!!!</span>
+
+              <div className="relative">
+                <div className="absolute inset-0 flex justify-center items-center">
+                  <div className="flex rounded-full w-24 h-36 animate-[spin_5s_linear_infinite] blur-xl bg-cyan-400 z-0 justify-center items-center" />
+                </div>
+                <div className="z-10 flex flex-col rounded-xl w-full px-6 py-3 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.2] hover:bg-white/80 backdrop-blur-2xl">
+                  <h3 className="font-semibold mobile-m:text-[18px] mobile-m:leading-[24px] tablet-s:text-[20px] tablet-s:leading-7 text-SDX-900">Open-Source</h3>
+                  <span className="font-light text-[18px] leading-[24px] text-SDX-900">Open source is critical for SwapDEX as it promotes transparency, collaboration, innovation, and trust within the community</span>
+                </div>
               </div>
-              <div className="flex flex-col rounded-xl px-3 py-3 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.2] hover:bg-white/80 backdrop-blur-xl">
-                <h3 className="text-2xl leading-7 font-bold text-SDX-900">Free</h3>
-                <span className="text-lg leading-5 font-light text-SDX-900"> This is some free stuff at SwapDEX - LFG!!!</span>
+
+              <div className="relative">
+                <div className="absolute rounded-full w-6 h-6 bg-SDX-Pink z-0 blur-lg" />
+                <div className="flex flex-col rounded-xl w-full px-6 py-3 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.2] hover:bg-white/80 backdrop-blur-xl">
+                  <h3 className="font-semibold mobile-m:text-[18px] mobile-m:leading-[24px] tablet-s:text-[20px] tablet-s:leading-7 text-SDX-900">Transparent</h3>
+                  <span className="font-light text-[18px] leading-[24px] text-SDX-900">SwapDEX values transparency, ensuring that its operations, governance, and decision-making processes are open and accessible to all</span>
+                </div>
               </div>
             </div>
           </div>
@@ -75,7 +88,7 @@ const Blockchain = () => {
             <span className="font-bold text-[30px] leading-[34px] text-SDX-900">SwapDEX in a nutshell</span>
             <div className="flex flex-row gap-4">
               <div
-                className={`flex rounded-xl cursor-pointer border-2 ${button01IsClicked ? 'border-SDX-Pink' : 'border-white'} transition ease-in-out delay-75 bg-white/[0.2] hover:bg-white/80 backdrop-blur-xl px-[10px] py-[10px]`}
+                className={`flex rounded-xl cursor-pointer border-2 ${button01IsClicked ? 'border-SDX-LightPink' : 'border-white'} transition ease-in-out delay-75 bg-white/[0.2] hover:bg-white/80 backdrop-blur-xl px-[10px] py-[10px]`}
                 onClick={handleClickButton01}
               >
                 <div className="flex mx-auto gap-2">
@@ -84,7 +97,7 @@ const Blockchain = () => {
               </div>
 
               <div
-                className={`flex rounded-xl cursor-pointer border-2 ${button02IsClicked ? 'border-SDX-Pink' : 'border-white'} transition ease-in-out delay-75 bg-white/[0.2] hover:bg-white/80 backdrop-blur-xl px-[10px] py-[10px]`}
+                className={`flex rounded-xl cursor-pointer border-2 ${button02IsClicked ? 'border-SDX-LightPink' : 'border-white'} transition ease-in-out delay-75 bg-white/[0.2] hover:bg-white/80 backdrop-blur-xl px-[10px] py-[10px]`}
                 onClick={handleClickButton02}
               >
                 <div className="flex mx-auto gap-2">
@@ -93,7 +106,7 @@ const Blockchain = () => {
               </div>
 
               <div
-                className={`flex rounded-xl cursor-pointer border-2 ${button03IsClicked ? 'border-SDX-Pink' : 'border-white'} transition ease-in-out delay-75 bg-white/[0.2] hover:bg-white/80 backdrop-blur-xl px-[10px] py-[10px]`}
+                className={`flex rounded-xl cursor-pointer border-2 ${button03IsClicked ? 'border-SDX-LightPink' : 'border-white'} transition ease-in-out delay-75 bg-white/[0.2] hover:bg-white/80 backdrop-blur-xl px-[10px] py-[10px]`}
                 onClick={handleClickButton03}
               >
                 <div className="flex mx-auto gap-2">
