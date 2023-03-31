@@ -30,6 +30,16 @@ const CTA = () => (
             supportTextClasses="text-SDX-900 my-auto"
           />
           <MobileDownloadButton
+            link="https://drive.google.com/drive/folders/1bRmKrm06RsmdSM-721XbJzA2D5U3Ssmp?usp=sharing"
+            logo="/swapdex-logo-icon.svg"
+            className="border border-SDX-Pink ghost-button my-auto py-4 px-6 gap-2 w-full justify-center items-algin-center translate-bump shadow-hover"
+            logoClasses="w-[26px] h-[26px]"
+            supportText="DOWNLOAD TODAY"
+            mainText="Beta Version"
+            mainTextClasses="text-SDX-900 my-auto"
+            supportTextClasses="text-SDX-900 my-auto"
+          />
+          {/* <MobileDownloadButton
             link="https://www.apple.com/"
             logo="/Apple_logo_black.svg"
             className="border border-SDX-Pink ghost-button my-auto py-4 px-6 gap-2 w-full justify-center items-algin-center translate-bump shadow-hover"
@@ -48,7 +58,7 @@ const CTA = () => (
             mainText="Google Play"
             mainTextClasses="text-SDX-900 my-auto"
             supportTextClasses="text-SDX-900 my-auto"
-          />
+          /> */}
         </div>
       </div>
       <div className="grid mobile-s:grid-col-4 tablet-s:grid-cols-12 items-center justify-center">

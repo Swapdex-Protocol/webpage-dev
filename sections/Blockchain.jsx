@@ -55,83 +55,90 @@ const Blockchain = () => {
           </motion.div>
 
           <div className={`${styles.innerWidth} ${styles.yPaddings} mx-auto`}>
-            <div className="flex flex-row justify-between gap-5">
-              <div className="relative">
-                <div className="absolute rounded-full w-6 h-6 bg-SDX-Pink z-0 blur-lg" />
-                <div className="z-10 flex flex-col rounded-xl w-full px-6 py-3 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.2] hover:bg-white/80 backdrop-blur-xl">
-                  <h3 className="font-semibold mobile-m:text-[18px] mobile-m:leading-[24px] tablet-s:text-[20px] tablet-s:leading-7 text-SDX-900">Independent</h3>
-                  <span className="font-light text-[18px] leading-[24px] text-SDX-900">Maintaining independence is crucial for swapdex, as it ensures the network remains trustworthy and free from outside influence</span>
+            <div className="flex flex-col laptop-s:flex-row justify-between gap-5">
+
+              <div className="relative overflow-hidden">
+                <div className="z-10 flex flex-col rounded-xl w-full h-40 laptop-s:h-52 px-6 py-3 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.6] hover:bg-white/80">
+                  <div className="flex flex-row gap-2">
+                    <div className="w-1 h-full bg-SDX-Pink" />
+                    <h3 className="font-semibold text-[20px] leading-7 text-SDX-900">Independent</h3>
+                  </div>
+                  <span className="font-light text-[16px] leading-[20px] tablet-s:text-[18px] tablet-s:leading-[24px] text-SDX-900">Maintaining independence is crucial for SwapDex, as it ensures the network remains trustworthy and free from outside influence</span>
+                </div>
+              </div>
+
+              <div className="relative overflow-hidden">
+                <div className="z-10 flex flex-col rounded-xl w-full h-40 laptop-s:h-52 px-6 py-3 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.6] hover:bg-white/80">
+                  <div className="flex flex-row gap-2">
+                    <div className="w-1 h-full bg-SDX-Pink" />
+                    <h3 className="font-semibold text-[20px] leading-7 text-SDX-900">Open-Source</h3>
+                  </div>
+                  <span className="font-light text-[16px] leading-[20px] tablet-s:text-[18px] tablet-s:leading-[24px] text-SDX-900">Open source is critical for SwapDEX as it promotes transparency, collaboration, innovation, and trust within the community</span>
                 </div>
               </div>
 
               <div className="relative">
-                <div className="absolute inset-0 flex justify-center items-center">
-                  <div className="flex rounded-full w-24 h-36 animate-[spin_5s_linear_infinite] blur-xl bg-cyan-400 z-0 justify-center items-center" />
-                </div>
-                <div className="z-10 flex flex-col rounded-xl w-full px-6 py-3 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.2] hover:bg-white/80 backdrop-blur-2xl">
-                  <h3 className="font-semibold mobile-m:text-[18px] mobile-m:leading-[24px] tablet-s:text-[20px] tablet-s:leading-7 text-SDX-900">Open-Source</h3>
-                  <span className="font-light text-[18px] leading-[24px] text-SDX-900">Open source is critical for SwapDEX as it promotes transparency, collaboration, innovation, and trust within the community</span>
-                </div>
-              </div>
-
-              <div className="relative">
-                <div className="absolute rounded-full w-6 h-6 bg-SDX-Pink z-0 blur-lg" />
-                <div className="flex flex-col rounded-xl w-full px-6 py-3 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.2] hover:bg-white/80 backdrop-blur-xl">
-                  <h3 className="font-semibold mobile-m:text-[18px] mobile-m:leading-[24px] tablet-s:text-[20px] tablet-s:leading-7 text-SDX-900">Transparent</h3>
-                  <span className="font-light text-[18px] leading-[24px] text-SDX-900">SwapDEX values transparency, ensuring that its operations, governance, and decision-making processes are open and accessible to all</span>
+                <div className="flex flex-col rounded-xl w-full h-40 laptop-s:h-52 px-6 py-3 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.6] hover:bg-white/80">
+                  <div className="flex flex-row gap-2">
+                    <div className="w-1 h-full bg-SDX-Pink" />
+                    <h3 className="font-semibold text-[20px] leading-7 text-SDX-900">Transparent</h3>
+                  </div>
+                  <span className="font-light text-[16px] leading-[20px] tablet-s:text-[18px] tablet-s:leading-[24px] text-SDX-900">SwapDEX values transparency, ensuring that its operations, governance, and decision-making processes are open and accessible to all</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className={`${styles.innerWidth} mx-auto flex flex-row justify-between align-middle`}>
+          <div className={`${styles.innerWidth} mx-auto flex flex-col gap-5 mb-5 laptop-s:flex-row justify-between align-middle`}>
             <span className="font-bold text-[30px] leading-[34px] text-SDX-900">SwapDEX in a nutshell</span>
-            <div className="flex flex-row gap-4">
+            <div className="flex flex-row justify-between laptop-s:gap-4 rounded-xl p-1 bg-SDX-LightPink/50">
               <div
-                className={`flex rounded-xl cursor-pointer border-2 ${button01IsClicked ? 'border-SDX-LightPink' : 'border-white'} transition ease-in-out delay-75 bg-white/[0.2] hover:bg-white/80 backdrop-blur-xl px-[10px] py-[10px]`}
+                className={`flex rounded-xl cursor-pointer border-2 ${button01IsClicked ? 'border-white bg-white' : 'border-SDX-LightPink bg-white/[0.8]'} transition ease-in-out delay-75 backdrop-blur-xl px-[10px] py-[10px]`}
                 onClick={handleClickButton01}
               >
                 <div className="flex mx-auto gap-2">
-                  <span className="text-[16px] leading-[20px] tablet-s:text-[18px] tablet-s:leading-5 text-SDX-900 font-light my-auto">Button 01</span>
+                  <span className="text-[16px] leading-[20px] tablet-s:text-[18px] tablet-s:leading-5 text-SDX-900 font-medium my-auto">Ecosystem</span>
                 </div>
               </div>
 
               <div
-                className={`flex rounded-xl cursor-pointer border-2 ${button02IsClicked ? 'border-SDX-LightPink' : 'border-white'} transition ease-in-out delay-75 bg-white/[0.2] hover:bg-white/80 backdrop-blur-xl px-[10px] py-[10px]`}
+                className={`flex rounded-xl cursor-pointer border-2 ${button02IsClicked ? 'border-white bg-white' : 'border-SDX-LightPink bg-white/[0.8]'} transition ease-in-out delay-75 backdrop-blur-xl px-[10px] py-[10px]`}
                 onClick={handleClickButton02}
               >
                 <div className="flex mx-auto gap-2">
-                  <span className="text-[16px] leading-[20px] tablet-s:text-[18px] tablet-s:leading-5 text-SDX-900 font-light my-auto">Button 02</span>
+                  <span className="text-[16px] leading-[20px] tablet-s:text-[18px] tablet-s:leading-5 text-SDX-900 font-medium my-auto">Added Value</span>
                 </div>
               </div>
 
               <div
-                className={`flex rounded-xl cursor-pointer border-2 ${button03IsClicked ? 'border-SDX-LightPink' : 'border-white'} transition ease-in-out delay-75 bg-white/[0.2] hover:bg-white/80 backdrop-blur-xl px-[10px] py-[10px]`}
+                className={`flex rounded-xl cursor-pointer border-2 ${button03IsClicked ? 'border-white bg-white' : 'border-SDX-LightPink bg-white/[0.8]'} transition ease-in-out delay-75 backdrop-blur-xl px-[10px] py-[10px]`}
                 onClick={handleClickButton03}
               >
                 <div className="flex mx-auto gap-2">
-                  <span className="text-[16px] leading-[20px] tablet-s:text-[18px] tablet-s:leading-5 text-SDX-900 font-light my-auto">Button 03</span>
+                  <span className="text-[16px] leading-[20px] tablet-s:text-[18px] tablet-s:leading-5 text-SDX-900 font-medium my-auto">Equity NFTs</span>
                 </div>
               </div>
             </div>
           </div>
-          <div className={`${styles.innerWidth} tablet-s:mt-5 tablet-s:mx-auto flex flex-row justify-between align-middle`}>
-            <div className="w-1/2 h-80 border-2 border-white bg-white/80 rounded-l-2xl overflow-hidden">
-              <img
-                src={`${button01IsClicked ? '/desktop_app.png' : button02IsClicked ? '/Mobile_Wallet_Showcase.webp' : '/DEX-Showcase_03.webp'}`}
-                alt="Blockchain"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="w-1/2 rounded-r-2xl border-2 border-white bg-white/80 py-14 px-10">
-              <h2 className={`${button01IsClicked ? '' : 'hidden'} font-bold text-2xl text-SDX-900 mb-10`}>Heading 01</h2>
-              <h2 className={`${button02IsClicked ? '' : 'hidden'} font-bold text-2xl text-SDX-900 mb-10`}>Heading 02</h2>
-              <h2 className={`${button03IsClicked ? '' : 'hidden'} font-bold text-2xl text-SDX-900 mb-10`}>Heading 03</h2>
+          <div className={`${styles.innerWidth} tablet-s:mt-5 tablet-s:mx-auto flex flex-col laptop-s:flex-row justify-between align-middle`}>
+            <div className="flex flex-col laptop-s:flex-row">
+              <div className="w-full laptop-s:w-1/2 border-2 border-white rounded-tr-2xl rounded-tl-2xl laptop-s:rounded-tr-none laptop-s:rounded-tl-2xl laptop-s:rounded-bl-2xl overflow-hidden p-2 laptop-s:p-5 bg-SDX-800">
+                <img
+                  src={`${button01IsClicked ? '/slide_01.png' : button02IsClicked ? '/slide_02.png' : '/slide_03.png'}`}
+                  alt="Blockchain"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div className="w-full laptop-s:w-1/2 rounded-br-2xl rounded-bl-2xl  laptop-s:rounded-bl-none laptop-s:rounded-tr-2xl laptop-s:rounded-rb-2xl border-2 border-white bg-white/80 py-10 laptop-s:py-14 px-5 laptop-s:px-10">
+                <h2 className={`${button01IsClicked ? '' : 'hidden'} font-bold text-3xl text-SDX-900 mb-10`}>User-Centric DeFi Has Arrived!</h2>
+                <h2 className={`${button02IsClicked ? '' : 'hidden'} font-bold text-3xl text-SDX-900 mb-10`}>Reduction of Complexity in DeFi.</h2>
+                <h2 className={`${button03IsClicked ? '' : 'hidden'} font-bold text-3xl text-SDX-900 mb-10`}>Truly Decentralised Rewards!</h2>
 
-              <span className={`${button01IsClicked ? '' : 'hidden'} font-light text-lg text-SDX-900`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus lorem, dignissim vitae ex quis, mattis egestas sem. Aenean eu arcu a lorem varius egestas eget vel turpis.</span>
-              <span className={`${button02IsClicked ? '' : 'hidden'} font-light text-lg text-SDX-900`}>Curabitur sit amet scelerisque justo. Ut imperdiet consequat finibus.</span>
-              <span className={`${button03IsClicked ? '' : 'hidden'} font-light text-lg text-SDX-900`}>Fusce bibendum sollicitudin vulputate. Nam at augue consectetur, hendrerit nibh in, lacinia sem.</span>
+                <span className={`${button01IsClicked ? '' : 'hidden'} font-light text-lg text-SDX-900`}>SwapDEX offers a seamless DeFi experience by combining advanced technology with user-centric solutions. Built on the Substrate framework, trusted by Polkadot, Enjin and ChainLink, the SDX blockchain ensures secure, cheap, and fast transactions. Our SwapDEX Bridge connects EVM and Substrate networks, enabling cross-network asset transfers. With native solutions like SDX DEX and SDX NFT Marketplace, SwapDEX stands out as a comprehensive, enjoyable DeFi platform for both new and experienced users.</span>
+                <span className={`${button02IsClicked ? '' : 'hidden'} font-light text-lg text-SDX-900`}>SwapDEX simplifies DeFi by eliminating complexity and becoming your trusted one-stop shop. Our all-in-one platform, available on mobile and desktop, integrates essential solutions like cross-chain transfers, SDX DEX, and SDX NFT Marketplace. This user-centric approach offers unparalleled convenience while embracing community-driven DApps through its modular design. Experience the future of DeFi with SwapDEX: your go-to hub for a seamless and effortless DeFi journey.</span>
+                <span className={`${button03IsClicked ? '' : 'hidden'} font-light text-lg text-SDX-900`}>SwapDEX revolutionizes DeFi by offering equity NFTs in native solutions like the Limit-Order DEX and NFT Marketplace, allowing the SDX community to invest sustainably and decentralize rewards. Projects deploying on SwapDEX can leverage this system to add real value to their NFT collections. Additionally, SwapDEX provides an NFT plugin for webshops, enabling projects to link NFTs with real-world assets. Experience true DeFi innovation and community empowerment with SwapDEX's unique equity NFT offerings.</span>
 
+              </div>
             </div>
           </div>
         </div>

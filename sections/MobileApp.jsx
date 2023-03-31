@@ -26,8 +26,8 @@ const MobileApp = () => (
             logo="/Apple_logo_gray.svg"
             className="border border-SDX-Pink inline-flex pink-ghost-button my-auto py-4 px-6 gap-2 w-full items-center justify-center"
             logoClasses="w-[26px] h-[26px]"
-            supportText="Download on the"
-            mainText="App Store"
+            supportText="APP STORE"
+            mainText="Available Soon"
             mainTextClasses="text-SDX-200 my-auto"
             supportTextClasses="text-SDX-200 my-auto"
           />
@@ -36,8 +36,19 @@ const MobileApp = () => (
             logo="/Google_Play_2022_icon.svg"
             className="border border-SDX-Pink inline-flex pink-ghost-button my-auto py-4 px-6 gap-2 w-full items-center justify-center"
             logoClasses="w-[26px] h-[26px]"
-            supportText="GET IT ON"
-            mainText="Google Play"
+            supportText="GOOGLE PLAY"
+            mainText="Available Soon"
+            mainTextClasses="text-SDX-200 my-auto"
+            supportTextClasses="text-SDX-200 my-auto"
+          />
+          <div className="w-full h-[1px] bg-SDX-LightPink rounded-full" />
+          <MobileDownloadButton
+            link="https://drive.google.com/drive/folders/1bRmKrm06RsmdSM-721XbJzA2D5U3Ssmp?usp=sharing"
+            logo="/swapdex-logo-gray.svg"
+            className="border border-SDX-Pink inline-flex bg-SDX-Pink pink-button my-auto py-4 px-6 gap-2 w-full items-center justify-center"
+            logoClasses="w-[26px] h-[26px]"
+            supportText="DOWNLOAD TODAY"
+            mainText="Beta Version"
             mainTextClasses="text-SDX-200 my-auto"
             supportTextClasses="text-SDX-200 my-auto"
           />

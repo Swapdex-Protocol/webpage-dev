@@ -16,7 +16,7 @@ const DesktopApp = () => (
         <img
           src="/SDX_iridescent2_sideView.png"
           alt="swapdex-logo"
-          className="mobile-s:w-full object-contain mx-auto z-10"
+          className="mobile-s:w-full object-contain mx-auto z-10 max-h-96"
         />
       </div>
       <div className="absolute h-[500px] w-[500px] bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blob z-0" />
@@ -39,8 +39,8 @@ const DesktopApp = () => (
             logo="/Apple_logo_gray.svg"
             className="border border-SDX-Pink inline-flex pink-ghost-button my-auto py-4 px-6 gap-2 w-full items-center justify-center"
             logoClasses="w-[26px] h-[26px]"
-            supportText="Download on the"
-            mainText="App Store"
+            supportText="APP STORE"
+            mainText="Available Soon"
             mainTextClasses="text-SDX-200 my-auto"
             supportTextClasses="text-SDX-200 my-auto"
           />
@@ -49,8 +49,19 @@ const DesktopApp = () => (
             logo="/microsoft-5.svg"
             className="border border-SDX-Pink inline-flex pink-ghost-button my-auto py-4 px-6 gap-2 w-full items-center justify-center"
             logoClasses="w-[26px] h-[26px]"
-            supportText="GET IT FROM"
-            mainText="Microsoft"
+            supportText="MICROSOFT STORE"
+            mainText="Available Soon"
+            mainTextClasses="text-SDX-200 my-auto"
+            supportTextClasses="text-SDX-200 my-auto"
+          />
+          <div className="w-full h-[1px] tablet-s:w-[1px] tablet-s:h-full bg-SDX-LightPink rounded-full" />
+          <MobileDownloadButton
+            link="https://drive.google.com/drive/folders/1bRmKrm06RsmdSM-721XbJzA2D5U3Ssmp?usp=sharing"
+            logo="/swapdex-logo-gray.svg"
+            className="border border-SDX-Pink inline-flex bg-SDX-Pink pink-button my-auto py-4 px-6 gap-2 w-full items-center justify-center"
+            logoClasses="w-[26px] h-[26px]"
+            supportText="DOWNLOAD TODAY"
+            mainText="Beta Version"
             mainTextClasses="text-SDX-200 my-auto"
             supportTextClasses="text-SDX-200 my-auto"
           />
