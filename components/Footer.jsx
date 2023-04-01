@@ -9,8 +9,7 @@ const Footer = () => (
       <div className="flex w-full">
         <div className="flex flex-col sm:flex-row w-full justify-between">
           <div className="grid grid-cols-8 sm:flex sm:flex-row gap-2">
-            <img src="/swapdex-logo-icon.svg" className="object-contain h-8 col-span-1" />
-            <p className="font-bold text-[24px] leading-8 text-SDX-200 col-span-7">SwapDEX</p>
+            <img src="/swapdex-light.png" className="object-contain h-6 col-span-1" />
             <p className="font-medium text-[16px] leading-5 text-SDX-400 my-auto col-span-8"> - Join the censor-free network</p>
           </div>
           <div className="flex flex-row mt-8 sm:mt-1 justify-between sm:gap-4 my-auto">
@@ -115,16 +114,10 @@ const Footer = () => (
           </Link>
         </div>
         <div className="flex flex-col gap-4">
-          <h1 className="font-semibold text-[16px] leading-5 sm:text-[14px] sm:leading-4 text-SDX-200">Small Print</h1>
-          <Link href="https://google.com" target="_blank">
+          <h1 className="font-semibold text-[16px] leading-5 sm:text-[14px] sm:leading-4 text-SDX-200">Branding</h1>
+          <Link href="https://drive.google.com/drive/u/1/folders/1bgNeXs8XqfM7ORmN5V0pHXNjnv_0ArbN" target="_blank">
             <div className="inline-block reveal-div min-w-0">
-              <p className="font-light text-[12px] leading-4 text-SDX-200">Terms of use</p>
-              <div className="h-[1px] rounded-full bg-[#fbf8cc] align-bottom nav-underline" />
-            </div>
-          </Link>
-          <Link href="https://google.com" target="_blank">
-            <div className="inline-block reveal-div min-w-0">
-              <p className="font-light text-[12px] leading-4 text-SDX-200">Privacy Policy</p>
+              <p className="font-light text-[12px] leading-4 text-SDX-200">Media Kit</p>
               <div className="h-[1px] rounded-full bg-[#fbf8cc] align-bottom nav-underline" />
             </div>
           </Link>

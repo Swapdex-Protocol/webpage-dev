@@ -8,13 +8,10 @@ const Navbar = () => (
     <div className={`${styles.innerWidth} ${styles.xPaddings} mx-auto flex justify-between items-center`}>
       <div className="flex gap-[10px]">
         <img
-          src="/swapdex-logo-icon.svg"
+          src="/swapdex-light.png"
           alt="swapdex-logo"
-          className="w-[37px] object-contain"
+          className="w-[188px] object-contain"
         />
-        <h2 className="font-semibold text-[18px] leading-[20px] my-auto mobile-m:text-[24px] mobile-m:leading-[30px] text-SDX-200">
-          SwapDEX
-        </h2>
       </div>
       <div className="laptop-s:flex gap-[23px] align-middle mobile-s:hidden">
         <a href="#blockchain">

@@ -44,6 +44,7 @@ const MobileApp = () => (
           <div className="w-full h-[1px] bg-SDX-LightPink rounded-full" />
           <MobileDownloadButton
             link="https://drive.google.com/drive/folders/1bRmKrm06RsmdSM-721XbJzA2D5U3Ssmp?usp=sharing"
+            target="_blank"
             logo="/swapdex-logo-gray.svg"
             className="border border-SDX-Pink inline-flex bg-SDX-Pink pink-button my-auto py-4 px-6 gap-2 w-full items-center justify-center"
             logoClasses="w-[26px] h-[26px]"

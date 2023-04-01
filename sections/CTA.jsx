@@ -31,6 +31,7 @@ const CTA = () => (
           />
           <MobileDownloadButton
             link="https://drive.google.com/drive/folders/1bRmKrm06RsmdSM-721XbJzA2D5U3Ssmp?usp=sharing"
+            target="_blank"
             logo="/swapdex-logo-icon.svg"
             className="border border-SDX-Pink ghost-button my-auto py-4 px-6 gap-2 w-full justify-center items-algin-center translate-bump shadow-hover"
             logoClasses="w-[26px] h-[26px]"
