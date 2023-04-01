@@ -31,7 +31,7 @@ const Blockchain = () => {
 
   return (
     <section className="bg-gradient-to-t from-SDX-LightPink via-violet-200 to-blue-200 -mt-4">
-      <div className="relative h-full w-full backdrop-blur-[500px] bg-[#ffffff9d]">
+      <div className="relative h-full w-full">
         <div className={`${styles.yPaddings} ${styles.xPaddings} flex flex-col mobile-s:-top-5 relative`}>
           {/* Everything in this parent div are page elements with the appropriate margin */}
           <motion.div
@@ -58,7 +58,7 @@ const Blockchain = () => {
             <div className="flex flex-col laptop-s:flex-row justify-between gap-5">
 
               <div className="relative overflow-hidden">
-                <div className="z-10 flex flex-col rounded-xl w-full h-40 laptop-s:h-52 px-6 py-3 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.6] hover:bg-white/80">
+                <div className="z-10 flex flex-col rounded-xl w-full h-40 px-6 py-3 laptop-s:py-6 laptop-s:h-52 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.6] hover:bg-white/80">
                   <div className="flex flex-row gap-2">
                     <div className="w-1 h-full bg-SDX-Pink" />
                     <h3 className="font-semibold text-[20px] leading-7 text-SDX-900">Independent</h3>
@@ -68,7 +68,7 @@ const Blockchain = () => {
               </div>
 
               <div className="relative overflow-hidden">
-                <div className="z-10 flex flex-col rounded-xl w-full h-40 laptop-s:h-52 px-6 py-3 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.6] hover:bg-white/80">
+                <div className="z-10 flex flex-col rounded-xl w-full h-40 laptop-s:h-52 px-6 py-3 laptop-s:py-6 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.6] hover:bg-white/80">
                   <div className="flex flex-row gap-2">
                     <div className="w-1 h-full bg-SDX-Pink" />
                     <h3 className="font-semibold text-[20px] leading-7 text-SDX-900">Open-Source</h3>
@@ -78,7 +78,7 @@ const Blockchain = () => {
               </div>
 
               <div className="relative">
-                <div className="flex flex-col rounded-xl w-full h-40 laptop-s:h-52 px-6 py-3 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.6] hover:bg-white/80">
+                <div className="flex flex-col rounded-xl w-full h-40 laptop-s:h-52 px-6 py-3 laptop-s:py-6 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.6] hover:bg-white/80">
                   <div className="flex flex-row gap-2">
                     <div className="w-1 h-full bg-SDX-Pink" />
                     <h3 className="font-semibold text-[20px] leading-7 text-SDX-900">Transparent</h3>

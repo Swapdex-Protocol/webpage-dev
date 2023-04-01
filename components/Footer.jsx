@@ -9,7 +9,7 @@ const Footer = () => (
       <div className="flex w-full">
         <div className="flex flex-col sm:flex-row w-full justify-between">
           <div className="grid grid-cols-8 sm:flex sm:flex-row gap-2">
-            <img src="/swapdex-light.png" className="object-contain h-6 col-span-1" />
+            <img src="/swapdex-light.png" className="object-contain w-[188px] col-span-8 laptop-s:col-span-1" />
             <p className="font-medium text-[16px] leading-5 text-SDX-400 my-auto col-span-8"> - Join the censor-free network</p>
           </div>
           <div className="flex flex-row mt-8 sm:mt-1 justify-between sm:gap-4 my-auto">

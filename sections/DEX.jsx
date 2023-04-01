@@ -3,7 +3,7 @@
 import styles from '../styles';
 
 const DEX = () => (
-  <section id="dex" className={`bg-white ${styles.yPaddings} ${styles.xPaddings}`}>
+  <section id="dex" className={`bg-white bg-gradient-to-t from-SDX-LightPink/40 via-violet-200/60 to-blue-200/60 ${styles.yPaddings} ${styles.xPaddings}`}>
     <div className="relative flex flex-col w-full h-full">
       <div className={`static w-full h-full ${styles.innerWidth} mx-auto z-10`}>
         <div className="flex flex-col w-full">
