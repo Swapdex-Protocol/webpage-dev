@@ -10,7 +10,7 @@ const Footer = () => (
         <div className="flex flex-col sm:flex-row w-full justify-between">
           <div className="grid grid-cols-8 sm:flex sm:flex-row gap-2">
             <img src="/swapdex-light.png" className="object-contain w-[188px] col-span-8 laptop-s:col-span-1" />
-            <p className="font-medium text-[16px] leading-5 text-SDX-400 my-auto col-span-8"> - Join the censor-free network</p>
+            <p className="font-medium text-[16px] leading-5 text-SDX-200 my-auto col-span-8"> - Join the censor-free network</p>
           </div>
           <div className="flex flex-row mt-8 sm:mt-1 justify-between sm:gap-4 my-auto">
             <Link href="https://www.youtube.com/@swapdexnetwork4531?sub_confirmation=1" target="_blank">
@@ -33,25 +33,28 @@ const Footer = () => (
       </div>
       <div className="grid grid-cols-2 gap-y-5 sm:flex sm:flex-row w-full sm:justify-between mt-8 sm:mt-20">
         <div className="flex flex-col gap-4">
-          <h1 className="font-semibold text-[16px] leading-5 sm:text-[14px] sm:leading-4 text-SDX-200">Learn more</h1>
-          <Link href="https://docs.swapdex.network/home/tokenomics/" target="_blank">
-            <div className="inline-block reveal-div min-w-0">
-              <p className="font-light text-[12px] leading-4 text-SDX-200">Coin Economics</p>
-              <div className="h-[1px] rounded-full bg-SDX-Pink align-bottom nav-underline" />
-            </div>
-          </Link>
+          <h1 className="font-semibold text-[16px] leading-5 sm:text-[14px] sm:leading-4 text-SDX-200">New to SwapDEX?</h1>
           <Link href="https://docs.swapdex.network/" target="_blank">
             <div className="inline-block reveal-div min-w-0">
               <p className="font-light text-[12px] leading-4 text-SDX-200">Whitepaper</p>
               <div className="h-[1px] rounded-full bg-SDX-Pink align-bottom nav-underline" />
             </div>
           </Link>
-          <Link href="https://docs.swapdex.network/" target="_blank">
+
+          <Link href="https://docs.swapdex.network/home/tokenomics/" target="_blank">
             <div className="inline-block reveal-div min-w-0">
-              <p className="font-light text-[12px] leading-4 text-SDX-200">Documentation</p>
+              <p className="font-light text-[12px] leading-4 text-SDX-200">DApp User-Guide</p>
               <div className="h-[1px] rounded-full bg-SDX-Pink align-bottom nav-underline" />
             </div>
           </Link>
+
+          <Link href="https://docs.swapdex.network/" target="_blank">
+            <div className="inline-block reveal-div min-w-0">
+              <p className="font-light text-[12px] leading-4 text-SDX-200">Project Docs</p>
+              <div className="h-[1px] rounded-full bg-SDX-Pink align-bottom nav-underline" />
+            </div>
+          </Link>
+
           <Link href="https://swapdex.network/blog/" target="_blank">
             <div className="inline-block reveal-div min-w-0">
               <p className="font-light text-[12px] leading-4 text-SDX-200">Blog</p>
@@ -59,60 +62,66 @@ const Footer = () => (
             </div>
           </Link>
         </div>
+
         <div className="flex flex-col gap-4">
-          <h1 className="font-semibold text-[16px] leading-5 sm:text-[14px] sm:leading-4 text-SDX-200">Developers</h1>
-          <Link href="https://docs.swapdex.network/dev-guides/sdx-academy/" target="_blank">
-            <div className="inline-block reveal-div min-w-0">
-              <p className="font-light text-[12px] leading-4 text-SDX-200">SDX Academy</p>
-              <div className="h-[1px] rounded-full bg-[#b9fbc0] align-bottom nav-underline" />
-            </div>
-          </Link>
-          <Link href="https://docs.swapdex.network/dev-guides/chain-docs/" target="_blank">
-            <div className="inline-block reveal-div min-w-0">
-              <p className="font-light text-[12px] leading-4 text-SDX-200">Chain Documentation</p>
-              <div className="h-[1px] rounded-full bg-[#b9fbc0] align-bottom nav-underline" />
-            </div>
-          </Link>
-          <Link href="https://docs.swapdex.network/dev-guides/nft-docs/" target="_blank">
-            <div className="inline-block reveal-div min-w-0">
-              <p className="font-light text-[12px] leading-4 text-SDX-200">NFT Documentation</p>
-              <div className="h-[1px] rounded-full bg-[#b9fbc0] align-bottom nav-underline" />
-            </div>
-          </Link>
-          <Link href="https://docs.swapdex.network/dev-guides/bug-bounty/" target="_blank">
-            <div className="inline-block reveal-div min-w-0">
-              <p className="font-light text-[12px] leading-4 text-SDX-200">Bug Bounty</p>
-              <div className="h-[1px] rounded-full bg-[#b9fbc0] align-bottom nav-underline" />
-            </div>
-          </Link>
-        </div>
-        <div className="flex flex-col gap-4">
-          <h1 className="font-semibold text-[16px] leading-5 sm:text-[14px] sm:leading-4 text-SDX-200">Web3 Projects</h1>
+          <h1 className="font-semibold text-[16px] leading-5 sm:text-[14px] sm:leading-4 text-SDX-200">Hodlers</h1>
           <Link href="https://docs.swapdex.network/web3-projects/dex-listing/" target="_blank">
             <div className="inline-block reveal-div min-w-0">
-              <p className="font-light text-[12px] leading-4 text-SDX-200">DEX Listing</p>
+              <p className="font-light text-[12px] leading-4 text-SDX-200">Coin Economics</p>
               <div className="h-[1px] rounded-full bg-[#8eecf5] align-bottom nav-underline" />
             </div>
           </Link>
           <Link href="https://docs.swapdex.network/web3-projects/nft-creators/" target="_blank">
             <div className="inline-block reveal-div min-w-0">
-              <p className="font-light text-[12px] leading-4 text-SDX-200">NFT Creators</p>
+              <p className="font-light text-[12px] leading-4 text-SDX-200">Roadmap</p>
               <div className="h-[1px] rounded-full bg-[#8eecf5] align-bottom nav-underline" />
             </div>
           </Link>
           <Link href="https://docs.swapdex.network/web3-projects/migration-guide/" target="_blank">
             <div className="inline-block reveal-div min-w-0">
-              <p className="font-light text-[12px] leading-4 text-SDX-200">Migrate to SwapDEX</p>
+              <p className="font-light text-[12px] leading-4 text-SDX-200">Staking</p>
               <div className="h-[1px] rounded-full bg-[#8eecf5] align-bottom nav-underline" />
             </div>
           </Link>
           <Link href="https://docs.swapdex.network/web3-projects/partnerships/" target="_blank">
             <div className="inline-block reveal-div min-w-0">
-              <p className="font-light text-[12px] leading-4 text-SDX-200">Partnerships</p>
+              <p className="font-light text-[12px] leading-4 text-SDX-200">Run a Validator</p>
               <div className="h-[1px] rounded-full bg-[#8eecf5] align-bottom nav-underline" />
             </div>
           </Link>
         </div>
+
+        <div className="flex flex-col gap-4">
+          <h1 className="font-semibold text-[16px] leading-5 sm:text-[14px] sm:leading-4 text-SDX-200">Developers</h1>
+          <Link href="https://docs.swapdex.network/dev-guides/sdx-academy/" target="_blank">
+            <div className="inline-block reveal-div min-w-0">
+              <p className="font-light text-[12px] leading-4 text-SDX-200">Core Concepts</p>
+              <div className="h-[1px] rounded-full bg-[#b9fbc0] align-bottom nav-underline" />
+            </div>
+          </Link>
+
+          <Link href="https://docs.swapdex.network/dev-guides/chain-docs/" target="_blank">
+            <div className="inline-block reveal-div min-w-0">
+              <p className="font-light text-[12px] leading-4 text-SDX-200">Local Development</p>
+              <div className="h-[1px] rounded-full bg-[#b9fbc0] align-bottom nav-underline" />
+            </div>
+          </Link>
+
+          <Link href="https://docs.swapdex.network/dev-guides/nft-docs/" target="_blank">
+            <div className="inline-block reveal-div min-w-0">
+              <p className="font-light text-[12px] leading-4 text-SDX-200">NFTs</p>
+              <div className="h-[1px] rounded-full bg-[#b9fbc0] align-bottom nav-underline" />
+            </div>
+          </Link>
+
+          <Link href="https://docs.swapdex.network/dev-guides/bug-bounty/" target="_blank">
+            <div className="inline-block reveal-div min-w-0">
+              <p className="font-light text-[12px] leading-4 text-SDX-200">Smart Contracts</p>
+              <div className="h-[1px] rounded-full bg-[#b9fbc0] align-bottom nav-underline" />
+            </div>
+          </Link>
+        </div>
+
         <div className="flex flex-col gap-4">
           <h1 className="font-semibold text-[16px] leading-5 sm:text-[14px] sm:leading-4 text-SDX-200">Branding</h1>
           <Link href="https://drive.google.com/drive/u/1/folders/1bgNeXs8XqfM7ORmN5V0pHXNjnv_0ArbN" target="_blank">

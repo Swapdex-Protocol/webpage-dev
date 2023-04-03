@@ -13,15 +13,14 @@ const MobileApp = () => (
         <p className="font-light text-[18px] leading-[24px] text-SDX-200 text-right">Access the network everywhere you go</p>
       </div>
 
-      <div className="absolute h-[500px] w-[500px] bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full blob z-0 right-12" />
-
-      <div className="grid grid-rows-1 sm:grid-cols-3 laptop-s:grid-cols-5 w-full laptop-s:pt-10">
+      <div className="grid grid-rows-1 sm:grid-cols-3 laptop-s:grid-cols-5 w-full laptop-s:pt-10 overflow-hidden">
+        <div className="absolute flex h-[500px] w-[500px] bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full blob -z-0 right-52" />
         <img
           src="/Mobile_Wallet_Showcase.webp"
           alt="swapdex DeFi"
           className="mx-auto scale-125 laptop-s:scale-90 mt-20 mb-20 laptop-s:my-auto object-contain tablet-s:col-span-2 laptop-s:col-span-3 tablet-s:-translate-x-10"
         />
-        <div className="flex flex-col w-full gap-4 mx-auto my-auto sm:col-span-1 laptop-s:col-start-4 laptop-s:col-end-5">
+        <div className="flex flex-col w-full gap-4 mx-auto my-auto sm:col-span-1 laptop-s:col-start-4 laptop-s:col-end-5 z-10">
           <MobileDownloadButton
             link=""
             logo="/Apple_logo_gray.svg"

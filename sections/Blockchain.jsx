@@ -97,7 +97,7 @@ const Blockchain = () => {
                 onClick={handleClickButton01}
               >
                 <div className="flex mx-auto gap-2">
-                  <span className="text-[16px] leading-[20px] tablet-s:text-[18px] tablet-s:leading-5 text-SDX-900 font-medium my-auto">Ecosystem</span>
+                  <span className="text-[16px] leading-[20px] tablet-s:text-[18px] tablet-s:leading-5 text-SDX-900 font-medium my-auto">User-Centric</span>
                 </div>
               </div>
 
@@ -106,7 +106,7 @@ const Blockchain = () => {
                 onClick={handleClickButton02}
               >
                 <div className="flex mx-auto gap-2">
-                  <span className="text-[16px] leading-[20px] tablet-s:text-[18px] tablet-s:leading-5 text-SDX-900 font-medium my-auto">Added Value</span>
+                  <span className="text-[16px] leading-[20px] tablet-s:text-[18px] tablet-s:leading-5 text-SDX-900 font-medium my-auto">Less Complex</span>
                 </div>
               </div>
 
@@ -115,7 +115,7 @@ const Blockchain = () => {
                 onClick={handleClickButton03}
               >
                 <div className="flex mx-auto gap-2">
-                  <span className="text-[16px] leading-[20px] tablet-s:text-[18px] tablet-s:leading-5 text-SDX-900 font-medium my-auto">Equity NFTs</span>
+                  <span className="text-[16px] leading-[20px] tablet-s:text-[18px] tablet-s:leading-5 text-SDX-900 font-medium my-auto">Rewarding</span>
                 </div>
               </div>
             </div>
@@ -135,8 +135,8 @@ const Blockchain = () => {
                 <h2 className={`${button03IsClicked ? '' : 'hidden'} font-bold text-3xl text-SDX-900 mb-10`}>Truly Decentralised Rewards!</h2>
 
                 <span className={`${button01IsClicked ? '' : 'hidden'} font-light text-lg text-SDX-900`}>SwapDEX offers a seamless DeFi experience by combining advanced technology with user-centric solutions. Built on the Substrate framework, trusted by Polkadot, Enjin and ChainLink, the SDX blockchain ensures secure, cheap, and fast transactions. Our SwapDEX Bridge connects EVM and Substrate networks, enabling cross-network asset transfers. With native solutions like SDX DEX and SDX NFT Marketplace, SwapDEX stands out as a comprehensive, enjoyable DeFi platform for both new and experienced users.</span>
-                <span className={`${button02IsClicked ? '' : 'hidden'} font-light text-lg text-SDX-900`}>SwapDEX simplifies DeFi by eliminating complexity and becoming your trusted one-stop shop. Our all-in-one platform, available on mobile and desktop, integrates essential solutions like cross-chain transfers, SDX DEX, and SDX NFT Marketplace. This user-centric approach offers unparalleled convenience while embracing community-driven DApps through its modular design. Experience the future of DeFi with SwapDEX: your go-to hub for a seamless and effortless DeFi journey.</span>
-                <span className={`${button03IsClicked ? '' : 'hidden'} font-light text-lg text-SDX-900`}>SwapDEX revolutionizes DeFi by offering equity NFTs in native solutions like the Limit-Order DEX and NFT Marketplace, allowing the SDX community to invest sustainably and decentralize rewards. Projects deploying on SwapDEX can leverage this system to add real value to their NFT collections. Additionally, SwapDEX provides an NFT plugin for webshops, enabling projects to link NFTs with real-world assets. Experience true DeFi innovation and community empowerment with SwapDEX's unique equity NFT offerings.</span>
+                <span className={`${button02IsClicked ? '' : 'hidden'} font-light text-lg text-SDX-900`}>SwapDEX simplifies DeFi by eliminating complexity and becoming a trusted one-stop shop. The SwapDEX network can be accessed on mobile and desktop and integrates essential solutions like cross-chain transfers, a native decentralised exchange (DEX), and a native NFT marketplace. This user-centric approach offers unparalleled convenience while also embracing the development of community-driven DApps through SwapDEX's forkless design. Experience a seamless, scalable and secure DeFi journey on the SwapDEX blockchain.</span>
+                <span className={`${button03IsClicked ? '' : 'hidden'} font-light text-lg text-SDX-900`}>SwapDEX revolutionizes DeFi by offering equity NFTs in our native solutions like the Limit-Order DEX and NFT Marketplace, allowing the SDX community to invest sustainably and benefit from the adoption of the SwapDEX Network. Projects deploying on SwapDEX can leverage this NFT equity system to integrate their community too. Additionally, SwapDEX provides an NFT plugin for websites, enabling businesses to link NFTs with real-world assets. Experience true DeFi innovation and community empowerment with SwapDEX.</span>
 
               </div>
             </div>

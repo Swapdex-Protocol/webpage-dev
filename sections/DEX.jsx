@@ -13,7 +13,7 @@ const DEX = () => (
             <p className="font-medium text-[18px] leading-[24px] text-SDX-900 mt-2">Unlock the true power of decentralisation</p>
           </div>
         </div>
-        <div className="static flex w-[800px] sm:w-full rounded-[17px] mt-5 glassmorphism-light px-5 pt-5 min-h-[200px] tablet-s:mt-24">
+        <div className="static flex w-[800px] sm:w-full rounded-[17px] mt-5 glassmorphism-light px-5 pt-5 min-h-[200px] tablet-s:mt-16">
           <div className="flex flex-col bg-white w-full rounded-[12px]">
             <div className="flex flex-row ml-3 gap-2 my-2">
               <div className="h-3 w-3 rounded-full bg-SDX-Pink" />
