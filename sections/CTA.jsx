@@ -5,7 +5,7 @@ import styles from '../styles';
 import MobileDownloadButton from '../components/MobileDownloadButton';
 
 const CTA = () => (
-  <section id="CTA" className={`relative flex flex-col')] ${styles.yPaddings} w-full overflow-hidden`}>
+  <section id="CTA" className={`relative flex flex-col')] ${styles.yPaddings} w-full overflow-hidden bg-cover bg-no-repeat bg-center`} style={{ backgroundImage: "url('/CTA_render_01_done.jpg')" }}>
     <div className={`${styles.innerWidth} mt-16 mx-auto z-10`}>
       <div className="w-full mobile-s:mt-10 laptop-s:my-28">
         <h1 className="font-bold text-[40px] leading-[48px] text-SDX-900 text-center mx-auto">Download now</h1>
@@ -65,16 +65,10 @@ const CTA = () => (
         <Link href="https://www.coingecko.com/en/coins/swapdex" target="_blank" className=" mobile-s:col-start-2 mobile-s:col-end-3 tablet-s:col-start-6 tablet-s:col-end-7 mx-auto">
           <img src="./Gecko.svg" className="object-contain w-20 mobile-s:p-3 laptop-s:p-4" />
         </Link>
-        <Link href="https://coinmarketcap.com/currencies/swapdex-sdxb/" target="_blank" className="mobile-s:col-start-3 mobile-s:col-end-4 tablet-s:col-start-7 tablet-s:col-end-8 mx-auto">
+        <Link href="https://coinmarketcap.com/currencies/swapdex/" target="_blank" className="mobile-s:col-start-3 mobile-s:col-end-4 tablet-s:col-start-7 tablet-s:col-end-8 mx-auto">
           <img src="./CoinMarketCap.svg" className="object-contain w-20" />
         </Link>
       </div>
-    </div>
-    <div className="z-0 flex absolute laptop-s:-translate-y-40">
-      <img
-        src="/CTA_render_01_done.jpg"
-        className="object-cover mx-auto"
-      />
     </div>
   </section>
 );
