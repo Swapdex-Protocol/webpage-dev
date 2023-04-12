@@ -38,7 +38,7 @@ const Hero = () => {
             Robust for Developers.<br /> <span>Fast for Traders.</span>
           </motion.h1>
           <motion.div variants={textVariant(1.2)} className="font-light text-[16px] tablet-s:text-[18px] leading-[20px] tablet-s:leading-6 text-SDX-200 text-start tablet-s:text-center tablet-s:w-[570px]">
-            The SwapDEX Network is Powering Web3, NFT-, and Decentralised Finance Applications While Connecting Major Blockchains With Fast, Secure and Near-Zero Fees.
+            The SwapDEX Network is Powering Web3, NFT, and Decentralised Finance Applications While Connecting Major Blockchains With Fast, Secure and Near-Zero Fees.
           </motion.div>
           <motion.div variants={textVariant(1.3)}>
             <div className="flex flex-col tablet-s:flex-row gap-3 mt-5">

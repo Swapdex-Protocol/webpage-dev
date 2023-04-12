@@ -5,7 +5,7 @@ import styles from '../styles';
 import MobileDownloadButton from '../components/MobileDownloadButton';
 
 const CTA = () => (
-  <section id="CTA" className={`relative flex flex-col')] ${styles.yPaddings} w-full overflow-hidden bg-cover bg-no-repeat bg-center`} style={{ backgroundImage: "url('/CTA_render_01_done.jpg')" }}>
+  <section id="CTA" className={`relative flex flex-col')] ${styles.yPaddings} ${styles.xPaddings} w-full overflow-hidden bg-cover bg-no-repeat bg-center`} style={{ backgroundImage: "url('/CTA_render_01_done.jpg')" }}>
     <div className={`${styles.innerWidth} mt-16 mx-auto z-10`}>
       <div className="w-full mobile-s:mt-10 laptop-s:my-28">
         <h1 className="font-bold text-[40px] leading-[48px] text-SDX-900 text-center mx-auto">Download now</h1>
