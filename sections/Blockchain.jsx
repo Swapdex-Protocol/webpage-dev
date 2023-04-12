@@ -93,7 +93,7 @@ const Blockchain = () => {
             <span className="font-bold text-[30px] leading-[34px] text-SDX-900">SwapDEX in a nutshell</span>
             <div className="flex flex-row justify-between laptop-s:gap-4 rounded-xl p-1 bg-SDX-LightPink/50">
               <div
-                className={`flex rounded-xl cursor-pointer border-2 ${button01IsClicked ? 'border-white bg-white' : 'border-SDX-LightPink bg-white/[0.8]'} transition ease-in-out delay-75 backdrop-blur-xl px-[10px] py-[10px]`}
+                className={`flex rounded-xl cursor-pointer border-2 ${button01IsClicked ? 'border-white bg-white' : 'border-SDX-LightPink bg-white/[0.6]'} transition ease-in-out delay-75 backdrop-blur-xl px-[10px] py-[10px]`}
                 onClick={handleClickButton01}
               >
                 <div className="flex mx-auto gap-2">
@@ -102,7 +102,7 @@ const Blockchain = () => {
               </div>
 
               <div
-                className={`flex rounded-xl cursor-pointer border-2 ${button02IsClicked ? 'border-white bg-white' : 'border-SDX-LightPink bg-white/[0.8]'} transition ease-in-out delay-75 backdrop-blur-xl px-[10px] py-[10px]`}
+                className={`flex rounded-xl cursor-pointer border-2 ${button02IsClicked ? 'border-white bg-white' : 'border-SDX-LightPink bg-white/[0.6]'} transition ease-in-out delay-75 backdrop-blur-xl px-[10px] py-[10px]`}
                 onClick={handleClickButton02}
               >
                 <div className="flex mx-auto gap-2">
@@ -111,7 +111,7 @@ const Blockchain = () => {
               </div>
 
               <div
-                className={`flex rounded-xl cursor-pointer border-2 ${button03IsClicked ? 'border-white bg-white' : 'border-SDX-LightPink bg-white/[0.8]'} transition ease-in-out delay-75 backdrop-blur-xl px-[10px] py-[10px]`}
+                className={`flex rounded-xl cursor-pointer border-2 ${button03IsClicked ? 'border-white bg-white' : 'border-SDX-LightPink bg-white/[0.6]'} transition ease-in-out delay-75 backdrop-blur-xl px-[10px] py-[10px]`}
                 onClick={handleClickButton03}
               >
                 <div className="flex mx-auto gap-2">
@@ -129,10 +129,10 @@ const Blockchain = () => {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <div className="w-full laptop-s:w-1/2 rounded-br-2xl rounded-bl-2xl  laptop-s:rounded-bl-none laptop-s:rounded-tr-2xl laptop-s:rounded-rb-2xl border-2 border-white bg-white/80 py-10 laptop-s:py-14 px-5 laptop-s:px-10">
-                <h2 className={`${button01IsClicked ? '' : 'hidden'} font-bold text-3xl text-SDX-900 mb-10`}>User-Centric DeFi Has Arrived!</h2>
-                <h2 className={`${button02IsClicked ? '' : 'hidden'} font-bold text-3xl text-SDX-900 mb-10`}>Reduction of Complexity in DeFi.</h2>
-                <h2 className={`${button03IsClicked ? '' : 'hidden'} font-bold text-3xl text-SDX-900 mb-10`}>Truly Decentralised Rewards!</h2>
+              <div className="w-full laptop-s:w-1/2 rounded-br-2xl rounded-bl-2xl  laptop-s:rounded-bl-none laptop-s:rounded-tr-2xl laptop-s:rounded-rb-2xl border-2 border-white bg-white/80 py-5 laptop-s:py-14 px-5 laptop-s:px-10">
+                <h2 className={`${button01IsClicked ? '' : 'hidden'} font-bold text-3xl text-SDX-900 mb-5 laptop-s:mb-10`}>User-Centric DeFi Has Arrived!</h2>
+                <h2 className={`${button02IsClicked ? '' : 'hidden'} font-bold text-3xl text-SDX-900 mb-5 laptop-s:mb-10`}>Reduction of Complexity in DeFi.</h2>
+                <h2 className={`${button03IsClicked ? '' : 'hidden'} font-bold text-3xl text-SDX-900 mb-5 laptop-s:mb-10`}>Truly Decentralised Rewards!</h2>
 
                 <span className={`${button01IsClicked ? '' : 'hidden'} font-light text-lg text-SDX-900`}>SwapDEX offers a seamless DeFi experience by combining advanced technology with user-centric solutions. Built on the Substrate framework, trusted by Polkadot, Enjin and ChainLink, the SDX blockchain ensures secure, cheap, and fast transactions. Our SwapDEX Bridge connects EVM and Substrate networks, enabling cross-network asset transfers. With native solutions like SDX DEX and SDX NFT Marketplace, SwapDEX stands out as a comprehensive, enjoyable DeFi platform for both new and experienced users.</span>
                 <span className={`${button02IsClicked ? '' : 'hidden'} font-light text-lg text-SDX-900`}>SwapDEX simplifies DeFi by eliminating complexity and becoming a trusted one-stop shop. The SwapDEX network can be accessed on mobile and desktop and integrates essential solutions like cross-chain transfers, a native decentralised exchange (DEX), and a native NFT marketplace. This user-centric approach offers unparalleled convenience while also embracing the development of community-driven DApps through SwapDEX's forkless design. Experience a seamless, scalable and secure DeFi journey on the SwapDEX blockchain.</span>

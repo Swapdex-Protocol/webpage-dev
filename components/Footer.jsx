@@ -28,6 +28,9 @@ const Footer = () => (
             <Link href="https://uk.linkedin.com/in/swapdex-defi-blockchain-978921224" target="_blank">
               <img src="/linkedin-gray.svg" className="h-6 sm:h-5 translate-bump" />
             </Link>
+            <Link href="https://github.com/Swapdex-Protocol" target="_blank">
+              <img src="/square-github.svg" className="h-6 sm:h-5 translate-bump" style={{ color: '#e6e9eb' }} />
+            </Link>
           </div>
         </div>
       </div>
@@ -64,7 +67,7 @@ const Footer = () => (
         </div>
 
         <div className="flex flex-col gap-4">
-          <h1 className="font-semibold text-[16px] leading-5 sm:text-[14px] sm:leading-4 text-SDX-200">Hodlers</h1>
+          <h1 className="font-semibold text-[16px] leading-5 sm:text-[14px] sm:leading-4 text-SDX-200">Holders</h1>
           <Link href="https://docs.swapdex.network/web3-projects/dex-listing/" target="_blank">
             <div className="inline-block reveal-div min-w-0">
               <p className="font-light text-[12px] leading-4 text-SDX-200">Coin Economics</p>
@@ -86,6 +89,12 @@ const Footer = () => (
           <Link href="https://docs.swapdex.network/web3-projects/partnerships/" target="_blank">
             <div className="inline-block reveal-div min-w-0">
               <p className="font-light text-[12px] leading-4 text-SDX-200">Run a Validator</p>
+              <div className="h-[1px] rounded-full bg-[#8eecf5] align-bottom nav-underline" />
+            </div>
+          </Link>
+          <Link href="https://docs.swapdex.network/web3-projects/partnerships/" target="_blank">
+            <div className="inline-block reveal-div min-w-0">
+              <p className="font-light text-[12px] leading-4 text-SDX-200">NFT-based LP-Farming</p>
               <div className="h-[1px] rounded-full bg-[#8eecf5] align-bottom nav-underline" />
             </div>
           </Link>
