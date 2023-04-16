@@ -9,6 +9,8 @@ import NFTCard from './NFTCard';
 import SmallKPIField from './SmallKPIField';
 import Footer from './Footer';
 import LiveDataCard from './LiveDataCard';
+import DownloadModal from './DownloadModal';
+import ModalButton from './ModalButton';
 
 export {
   Navbar,
@@ -22,4 +24,6 @@ export {
   SmallKPIField,
   Footer,
   LiveDataCard,
+  DownloadModal,
+  ModalButton,
 };
