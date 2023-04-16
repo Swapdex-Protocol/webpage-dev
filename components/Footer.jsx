@@ -14,22 +14,22 @@ const Footer = () => (
           </div>
           <div className="flex flex-row mt-8 sm:mt-1 justify-between sm:gap-4 my-auto">
             <Link href="https://www.youtube.com/@swapdexnetwork4531?sub_confirmation=1" target="_blank">
-              <img src="/youtube-gray.svg" className="h-6 sm:h-5 translate-bump" />
+              <img src="/youtube-gray.svg" className="h-6 sm:h-5" />
             </Link>
             <Link href="https://discord.gg/hBsxnNZgnX" target="_blank">
-              <img src="/discord-gray.svg" className="h-6 sm:h-5 translate-bump" />
+              <img src="/discord-gray.svg" className="h-6 sm:h-5" />
             </Link>
             <Link href="https://t.me/officialswapdexgroup" target="_blank">
-              <img src="/telegram-gray.svg" className="h-6 sm:h-5 translate-bump" />
+              <img src="/telegram-gray.svg" className="h-6 sm:h-5" />
             </Link>
             <Link href="https://twitter.com/swapdexo" target="_blank">
-              <img src="/square-twitter-gray.svg" className="h-6 sm:h-5 translate-bump" />
+              <img src="/square-twitter-gray.svg" className="h-6 sm:h-5" />
             </Link>
             <Link href="https://uk.linkedin.com/in/swapdex-defi-blockchain-978921224" target="_blank">
-              <img src="/linkedin-gray.svg" className="h-6 sm:h-5 translate-bump" />
+              <img src="/linkedin-gray.svg" className="h-6 sm:h-5 " />
             </Link>
             <Link href="https://github.com/Swapdex-Protocol" target="_blank">
-              <img src="/square-github.svg" className="h-6 sm:h-5 translate-bump" style={{ color: '#e6e9eb' }} />
+              <img src="/square-github.svg" className="h-6 sm:h-5" />
             </Link>
           </div>
         </div>
