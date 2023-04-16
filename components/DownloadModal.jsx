@@ -18,7 +18,7 @@ const DownloadModal = ({ isOpen, header, subheader, body, footer, handleClose })
       animate={isOpen ? 'visible' : 'hidden'}
       variants={fadeInVariants}
       transition={{ duration: 0.5 }}
-      className="flexCenter fixed inset-0 z-50 bg-black/40 backdrop-blur-md"
+      className="flexCenter fixed inset-0 z-50 bg-SDX-900/30 backdrop-blur-sm"
     >
       <div className="w-full flexCenter">
         <div ref={modalRef} className="laptop-s:w-2/5 md:w-11/12 mobile-s:w-4/5 bg-white flex flex-col rounded-xl">
