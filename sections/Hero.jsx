@@ -35,7 +35,8 @@ const Hero = () => {
             TRULY DECENTRALISED WEB3 BLOCKCHAIN
           </motion.div>
           <motion.h1 variants={textVariant(1.1)} className="font-bold text-[50px] tablet-s:text-[60px] leading-[60px] tablet-s:leading-[70px] text-white text-start tablet-s:text-center">
-            Robust for Developers.<br /> <span>Fast for Traders.</span>
+            Robust for <span className="">Developers</span>.<br />
+            <span>Fast for <span className="">Traders</span>.</span>
           </motion.h1>
           <motion.div variants={textVariant(1.2)} className="font-light text-[16px] tablet-s:text-[18px] leading-[20px] tablet-s:leading-6 text-SDX-200 text-start tablet-s:text-center tablet-s:w-[570px]">
             The SwapDEX Network is Powering Web3, NFT, and Decentralised Finance Applications While Connecting Major Blockchains With Fast, Secure and Near-Zero Fees.

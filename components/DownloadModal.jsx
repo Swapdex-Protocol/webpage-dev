@@ -21,7 +21,7 @@ const DownloadModal = ({ isOpen, header, subheader, body, footer, handleClose })
       className="flexCenter fixed inset-0 z-50 bg-SDX-900/30 backdrop-blur-sm"
     >
       <div className="w-full flexCenter">
-        <div ref={modalRef} className="laptop-s:w-2/5 md:w-11/12 mobile-s:w-4/5 bg-white flex flex-col rounded-xl">
+        <div ref={modalRef} className="xl:w-2/5 laptop-s:w-8/12 md:w-11/12 mobile-s:w-11/12 bg-white flex flex-col rounded-xl">
           <div className="flex justify-end">
             <div className="relative w-3 h-3 minlg:w-6 minlg:h-6 cursor-pointer bg-SDX-Pink border-2 border-gray-200 -top-2 -right-2 p-4 rounded-full" onClick={handleClose}>
               <Image

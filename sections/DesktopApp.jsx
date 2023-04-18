@@ -10,7 +10,7 @@ import { DownloadModal, ModalButton } from '../components';
 const DownloadBodyCmp = () => (
   <div className="p-5 laptop-s:px-10 mobile-s:px-5 border-t-2 border-b-2 border-gray-200">
     <h2 className="text-lg leading-7 font-semibold">Stable Beta Builds</h2>
-    <div className="flex laptop-s:flex-row mobile-s:flex-col justify-between laptop-s:gap-5 mobile-s:gap-2 mt-3">
+    <div className="flex laptop-s:flex-row justify-between laptop-s:gap-5 mobile-s:gap-2 mt-3">
       <Link href="https://drive.google.com/uc?id=1jQBVeC1OC3QdhDB6q9MNmkIny6Ih4t0-&export=download" target="_blank" className="w-full">
         <div className="flexCenter text-center flex-col laptop-s:py-5 mobile-s:py-2 bg-white/80 border-2 border-gray-200 hover:border-SDX-Pink hover:bg-white w-full rounded-xl cursor-pointer transition-all duration-300 ease-in-out">
           <div className="p-2 border-2 border-gray-200 bg-white bg-gradient-to-t from-SDX-LightPink/40 via-violet-200/60 to-blue-200/60 ring-2 ring-white ring-inset rounded-xl">

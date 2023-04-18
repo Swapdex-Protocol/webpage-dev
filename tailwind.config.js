@@ -25,6 +25,9 @@ module.exports = {
       transitionTimingFunction: {
         'out-flex': 'cubic-bezier(0.05, 0.6, 0.4, 0.9)',
       },
+      overscrollBehavior: {
+        'x-none': 'none',
+      },
     },
     screens: {
       'mobile-s': '320px',
@@ -56,6 +59,11 @@ module.exports = {
 
       '4k': '2560px',
       // => 4k res
+    },
+  },
+  variants: {
+    extend: {
+      overscrollBehavior: ['responsive'],
     },
   },
   plugins: [],
