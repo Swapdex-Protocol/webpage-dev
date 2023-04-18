@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: false,
   },
   images: {
-    // unoptimized: true,
+    unoptimized: true,
   },
 };
 
