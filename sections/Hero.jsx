@@ -47,7 +47,8 @@ const Hero = () => {
               <Button
                 link="#wallet"
                 image="/swapdex-logo-icon.svg"
-                className="border border-SDX-Pink w-full tablet-s:mt-[70px] pink-ghost-button px-[22px] py-[18px]"
+                imageAlt="Get Started Button"
+                className="border border-SDX-Pink w-full tablet-s:mt-[70px] pink-ghost-button px-[22px] py-[18px] object-contain"
                 imageClasses="w-[26px] tablet-s:w-[30px]"
                 textClasses="text-SDX-200 my-auto"
               >
@@ -56,7 +57,8 @@ const Hero = () => {
               <Button
                 link="https://discord.gg/hBsxnNZgnX"
                 image="/discord_white.svg"
-                className="bg-SDX-Pink border border-SDX-Pink w-full tablet-s:mt-[70px] pink-button px-[22px] py-[18px]"
+                imageAlt="Join Discord Button"
+                className="bg-SDX-Pink border border-SDX-Pink w-full tablet-s:mt-[70px] pink-button px-[22px] py-[18px] object-contain"
                 imageClasses="w-[26px] tablet-s:w-[30px]"
                 textClasses="text-SDX-200 my-auto"
                 target="_blank"

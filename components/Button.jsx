@@ -11,7 +11,6 @@ const Button = ({ image, link, imageAlt, children, className, imageClasses, text
           src={image}
           alt={imageAlt}
           className={imageClasses}
-          objectFit="contain"
           width={26}
           height={30}
         />

@@ -17,6 +17,7 @@ const DownloadBodyCmp = () => (
           <div className="p-2 border-2 border-gray-200 bg-white bg-gradient-to-t from-SDX-LightPink/40 via-violet-200/60 to-blue-200/60 ring-2 ring-white ring-inset rounded-xl">
             <Image
               src="/windows-black.svg"
+              alt="Windows Logo"
               width={40}
               height={40}
               className="w-10"
@@ -35,6 +36,7 @@ const DownloadBodyCmp = () => (
           <div className="p-2 border-2 border-gray-200 bg-white bg-gradient-to-t from-SDX-LightPink/40 via-violet-200/60 to-blue-200/60  ring-2 ring-white ring-inset rounded-xl">
             <Image
               src="/apple.svg"
+              alt="apple logo"
               width={40}
               height={40}
               className="w-10"
@@ -53,6 +55,7 @@ const DownloadBodyCmp = () => (
           <div className="p-2 border-2 border-gray-200 bg-white bg-gradient-to-t from-SDX-LightPink/40 via-violet-200/60 to-blue-200/60  ring-2 ring-white ring-inset rounded-xl">
             <Image
               src="/linux.svg"
+              alt="Linux logo"
               width={40}
               height={40}
               className="w-10"
@@ -74,6 +77,7 @@ const DownloadBodyCmp = () => (
         <div className="p-2 border-2 border-gray-200 bg-white bg-gradient-to-t from-SDX-LightPink/40 via-violet-200/60 to-blue-200/60  ring-2 ring-white ring-inset rounded-xl">
           <Image
             src="/logo-40x40.png"
+            alt="Windows Store Logo"
             width={40}
             height={40}
             className="w-10"
@@ -90,6 +94,7 @@ const DownloadBodyCmp = () => (
         <div className="p-2 border-2 border-gray-200 bg-white bg-gradient-to-t from-SDX-LightPink/40 via-violet-200/60 to-blue-200/60  ring-2 ring-white ring-inset rounded-xl">
           <Image
             src="/app-store-ios.svg"
+            alt="app store logo"
             width={40}
             height={40}
             className="w-10"
@@ -169,10 +174,10 @@ const CTA = () => {
         </div>
         <div className="grid mobile-s:grid-col-4 tablet-s:grid-cols-12 items-center justify-center tablet-s:mb-10">
           <Link href="https://www.coingecko.com/en/coins/swapdex" target="_blank" className=" mobile-s:col-start-2 mobile-s:col-end-3 tablet-s:col-start-6 tablet-s:col-end-7 mx-auto">
-            <Image src="./Gecko.svg" width={100} height={100} className="object-contain w-20 mobile-s:p-3 laptop-s:p-4" />
+            <Image src="./Gecko.svg" alt="coingecko logo" width={100} height={100} className="object-contain w-20 mobile-s:p-3 laptop-s:p-4" />
           </Link>
           <Link href="https://coinmarketcap.com/currencies/swapdex/" target="_blank" className="mobile-s:col-start-3 mobile-s:col-end-4 tablet-s:col-start-7 tablet-s:col-end-8 mx-auto">
-            <Image src="./CoinMarketCap.svg" width={100} height={100} className="object-contain w-20" />
+            <Image src="./CoinMarketCap.svg" alt="coin market cap logo" width={100} height={100} className="object-contain w-20" />
           </Link>
         </div>
       </div>
