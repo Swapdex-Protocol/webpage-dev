@@ -74,7 +74,7 @@ const Hero = () => {
             alt="SwapDex Hero Background"
             width={1600}
             height={900}
-            className=" -translate-y-16 object-contain"
+            className=" -translate-y-16 object-contain laptop-s:scale-100 scale-90"
           />
 
         </motion.div>

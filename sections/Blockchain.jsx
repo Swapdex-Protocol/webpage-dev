@@ -42,7 +42,7 @@ const Blockchain = () => {
             viewport={{ once: true, amount: 0.25 }}
             className={`${styles.innerWidth} tablet-s:mt-56 tablet-s:mx-auto flex flex-col`}
           >
-            <div className="flex flex-col tablet-s:justify-center tablet-s:items-center laptop-s:mt-10 mobile-s:mt-10">
+            <div className="flex flex-col tablet-s:justify-center tablet-s:items-center laptop-s:mt-10 mt-16">
               <motion.div variants={textVariant(0)} className="font-semibold text-[18px] leading-[24px] text-SDX-Pink tablet-s:text-center">
                 MADE FOR
               </motion.div>
@@ -55,8 +55,8 @@ const Blockchain = () => {
             </div>
           </motion.div>
 
-          <div className={`${styles.innerWidth} ${styles.yPaddings} mx-auto`}>
-            <div className="flex flex-col laptop-s:flex-row justify-between gap-5">
+          <div className={`${styles.innerWidth} py-8 laptop-s:py-12 mx-auto`}>
+            <div className="flex flex-col laptop-s:flex-row justify-between laptop-s:gap-5 gap-3">
 
               <div className="relative overflow-hidden">
                 <div className="z-10 flex flex-col rounded-xl w-full h-40 px-6 py-3 laptop-s:py-6 laptop-s:h-52 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.6] hover:bg-white/80">

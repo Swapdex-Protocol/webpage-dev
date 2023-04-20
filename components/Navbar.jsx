@@ -96,7 +96,7 @@ const Navbar = () => {
 
       {/* this is the div for the mobile navigation bar */}
 
-      <div className={`${styles.innerWidth} ${styles.xPaddings} flex justify-between items-center laptop-s:hidden`}>
+      <div className={`${styles.innerWidth} ${styles.xPaddings} flex justify-between items-center laptop-s:hidden py-3`}>
         <div className="flex">
           <Link href="/">
             <Image
@@ -129,7 +129,7 @@ const Navbar = () => {
             <div className="flex-1 p-4">
               <MenuItems active={active} setActive={setActive} isMobile setIsOpen={setIsOpen} />
             </div>
-            <div className="p-4 border-t border-SDX-300">
+            <div className="p-4 border-t border-SDX-300/25">
               <div className="flex justify-end">
                 <button type="button" className="py-2 px-4 border border-SDX-300 rounded-lg items-center hover:bg-SDX-700 transition-colors duration-300">
                   <Link href="/kusari" className="flex flex-row gap-2">
