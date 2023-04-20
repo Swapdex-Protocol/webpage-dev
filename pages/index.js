@@ -3,7 +3,7 @@ import { Hero, Blockchain, DesktopApp, MobileApp, DEX, NFTMarketplace, CTA } fro
 
 const Page = () => (
   <div className=" bg-SDX-900 overflow-hidden">
-    <div className="z-20">
+    <div className="z-0">
       <Hero />
     </div>
     <div className="z-0 tablet-s:-translate-y-56">

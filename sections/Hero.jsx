@@ -21,7 +21,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="sm:pt-16 xs:pt-8 pt-12 relative laptop-s:top-5 z-50">
+    <section className="sm:pt-16 xs:pt-8 pt-12 relative laptop-s:top-5 z-30">
       <motion.div
         variants={staggerContainer}
         initial="hidden"

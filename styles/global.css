@@ -358,3 +358,7 @@
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
+
+.nav-h {
+  height: calc(100vh - 66px);
+}
