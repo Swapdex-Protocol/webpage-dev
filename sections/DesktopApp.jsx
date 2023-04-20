@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import styles from '../styles';
 import MobileDownloadButton from '../components/MobileDownloadButton';
@@ -14,18 +15,17 @@ const DownloadBodyCmp = () => (
       <Link href="https://drive.google.com/uc?id=1jQBVeC1OC3QdhDB6q9MNmkIny6Ih4t0-&export=download" target="_blank" className="w-full">
         <div className="flexCenter text-center flex-col laptop-s:py-5 mobile-s:py-2 bg-white/80 border-2 border-gray-200 hover:border-SDX-Pink hover:bg-white w-full rounded-xl cursor-pointer transition-all duration-300 ease-in-out">
           <div className="p-2 border-2 border-gray-200 bg-white bg-gradient-to-t from-SDX-LightPink/40 via-violet-200/60 to-blue-200/60 ring-2 ring-white ring-inset rounded-xl">
-            <img
+            <Image
               src="/windows-black.svg"
+              width={40}
+              height={40}
               className="w-10"
             />
           </div>
           <span className="mt-2 text-sm font-bold">Windows</span>
           <div className="flex flex-row gap-2 items-center">
             <span className="font-light laptop-s:text-xs mobile-s:text-[8px] mobile-m:text-[10px] inline-block align-baseline text-SDX-400">Download</span>
-            <img
-              src="/cloud-download-gray.svg"
-              className="h-3"
-            />
+            <i className="fa-solid fa-cloud-arrow-down text-sm text-SDX-400" />
           </div>
         </div>
       </Link>
@@ -33,18 +33,17 @@ const DownloadBodyCmp = () => (
       <Link href="https://drive.google.com/uc?id=198juIu6U1YOV0FDN9UBa6atSqSB942Tz&export=download" target="_blank" className="w-full">
         <div className="flexCenter text-center flex-col laptop-s:py-5 mobile-s:py-2 bg-white/80 border-2 border-gray-200 hover:border-SDX-Pink hover:bg-white w-full rounded-xl cursor-pointer transition-all duration-300 ease-in-out">
           <div className="p-2 border-2 border-gray-200 bg-white bg-gradient-to-t from-SDX-LightPink/40 via-violet-200/60 to-blue-200/60  ring-2 ring-white ring-inset rounded-xl">
-            <img
+            <Image
               src="/apple.svg"
+              width={40}
+              height={40}
               className="w-10"
             />
           </div>
           <span className="mt-2 text-sm font-bold">Mac</span>
           <div className="flex flex-row gap-2 items-center">
             <span className="font-light laptop-s:text-xs mobile-s:text-[8px] mobile-m:text-[10px] inline-block align-baseline text-SDX-400">Download</span>
-            <img
-              src="/cloud-download-gray.svg"
-              className="h-3"
-            />
+            <i className="fa-solid fa-cloud-arrow-down text-sm text-SDX-400" />
           </div>
         </div>
       </Link>
@@ -52,18 +51,17 @@ const DownloadBodyCmp = () => (
       <Link href="https://drive.google.com/uc?id=1VNhZ511F0UtY1EWmElhezsGcR_u0rT0r&export=download" target="_blank" className="w-full">
         <div className="flexCenter text-center flex-col laptop-s:py-5 mobile-s:py-2 bg-white/80 border-2 border-gray-200 hover:border-SDX-Pink hover:bg-white w-full rounded-xl cursor-pointer transition-all duration-300 ease-in-out">
           <div className="p-2 border-2 border-gray-200 bg-white bg-gradient-to-t from-SDX-LightPink/40 via-violet-200/60 to-blue-200/60  ring-2 ring-white ring-inset rounded-xl">
-            <img
+            <Image
               src="/linux.svg"
+              width={40}
+              height={40}
               className="w-10"
             />
           </div>
           <span className="mt-2 text-sm font-bold">Linux</span>
           <div className="flex flex-row gap-2 items-center">
             <span className="font-light laptop-s:text-xs mobile-s:text-[8px] mobile-m:text-[10px] inline-block align-baseline text-SDX-400">Download</span>
-            <img
-              src="/cloud-download-gray.svg"
-              className="h-3"
-            />
+            <i className="fa-solid fa-cloud-arrow-down text-sm text-SDX-400" />
           </div>
         </div>
       </Link>
@@ -74,35 +72,33 @@ const DownloadBodyCmp = () => (
 
       <div className="flexCenter text-center flex-col py-5 bg-white/80 border-2 border-gray-200 w-full rounded-xl">
         <div className="p-2 border-2 border-gray-200 bg-white bg-gradient-to-t from-SDX-LightPink/40 via-violet-200/60 to-blue-200/60  ring-2 ring-white ring-inset rounded-xl">
-          <img
+          <Image
             src="/logo-40x40.png"
+            width={40}
+            height={40}
             className="w-10"
           />
         </div>
         <span className="mt-2 text-sm font-bold">Windows Store</span>
         <div className="flex flex-row gap-2 items-center">
           <span className="font-light laptop-s:text-xs mobile-s:text-[8px] mobile-m:text-[10px] inline-block align-baseline text-SDX-400">apps.microsoft.com</span>
-          <img
-            src="/link-SDX-400.svg"
-            className="h-3"
-          />
+          <i className="fa-solid fa-arrow-up-right-from-square text-sm text-SDX-400" />
         </div>
       </div>
 
       <div className="flexCenter text-center flex-col py-5 bg-white/80 border-2 border-gray-200 w-full rounded-xl">
         <div className="p-2 border-2 border-gray-200 bg-white bg-gradient-to-t from-SDX-LightPink/40 via-violet-200/60 to-blue-200/60  ring-2 ring-white ring-inset rounded-xl">
-          <img
+          <Image
             src="/app-store-ios.svg"
+            width={40}
+            height={40}
             className="w-10"
           />
         </div>
         <span className="mt-2 text-sm font-bold">App Store</span>
         <div className="flex flex-row gap-2 items-center">
-          <span className="font-light laptop-s:text-xs mobile-s:text-[8px] mobile-m:text-[10px] inline-block align-baseline text-SDX-400">www.apple.com/app-store</span>
-          <img
-            src="/link-SDX-400.svg"
-            className="h-3"
-          />
+          <span className="font-light laptop-s:text-xs mobile-s:text-[8px] mobile-m:text-[10px] inline-block align-baseline text-SDX-400">apple.com/app-store</span>
+          <i className="fa-solid fa-arrow-up-right-from-square text-sm text-SDX-400" />
         </div>
       </div>
 
@@ -125,11 +121,15 @@ const DesktopApp = () => {
       </div>
       <div className={`relative flex sm:mx-auto ${styles.innerWidth} tablet-s:py-24 laptop-s:pt-10`}>
         <div className="absolute flex mobile-s:w-[800px] tablet-s:-mt-10 laptop-l:w-[1024px] z-0 laptop-l:top-4 laptop-l:translate-x-[500px]">
-          <img
-            src="/SDX_iridescent2_sideView.png"
-            alt="swapdex-logo"
-            className="mobile-s:w-full object-contain mx-auto z-10 max-h-96"
-          />
+          <div className="w-full">
+            <Image
+              src="/SDX_iridescent2_sideView.png"
+              alt="SwapDEX background iridescent"
+              className='object-contain mx-auto z-10 max-h-96"'
+              width={300}
+              height={100}
+            />
+          </div>
         </div>
         <div className="absolute h-[500px] w-[500px] bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blob z-0" />
         <div className={`sm:absolute tablet-s:relative flex flex-col mx-auto ${styles.innerWidth} z-10 mt-5`}>
@@ -139,18 +139,21 @@ const DesktopApp = () => {
               <div className="w-[12px] h-[12px] rounded-full bg-amber-400" />
               <div className="w-[12px] h-[12px] rounded-full bg-lime-400" />
             </div>
-            <img
-              src="/desktop_app.png"
-              alt="desktop showcase"
-              className="w-full mx-auto rounded-[12px] mobile-s:min-h-[400px] tablet-s:h-auto"
-            />
+            <div className="w-full mx-auto selection:mobile-s:min-h-[400px] tablet-s:h-auto">
+              <Image
+                src="/desktop_app.png"
+                alt="Desktop App"
+                className="rounded-[12px]"
+                width={1600}
+                height={900}
+              />
+            </div>
           </div>
           <div className={`sm:absolute tablet-s:relative flex flex-col w-full sm:flex-row mt-5 laptop-s:mt-10 gap-3 sm:gap-8 mx-auto ${styles.innerWidth} sm:justify-center sm:items-center z-20`}>
             <MobileDownloadButton
               link="#mobile_app"
               logo="/swapdex-logo-icon.svg"
               className="border border-SDX-Pink inline-flex pink-ghost-button my-auto py-4 px-6 gap-2 w-full items-center justify-center"
-              logoClasses="w-[26px] h-[26px]"
               supportText="EXPLORE"
               mainText="Mobile Wallet"
               mainTextClasses="text-SDX-200 my-auto"

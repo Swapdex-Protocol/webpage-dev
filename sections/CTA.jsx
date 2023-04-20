@@ -3,6 +3,7 @@
 import { useState } from 'react';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from '../styles';
 import MobileDownloadButton from '../components/MobileDownloadButton';
 import { DownloadModal, ModalButton } from '../components';
@@ -14,18 +15,17 @@ const DownloadBodyCmp = () => (
       <Link href="https://drive.google.com/uc?id=1jQBVeC1OC3QdhDB6q9MNmkIny6Ih4t0-&export=download" target="_blank" className="w-full">
         <div className="flexCenter text-center flex-col laptop-s:py-5 mobile-s:py-2 bg-white/80 border-2 border-gray-200 hover:border-SDX-Pink hover:bg-white w-full rounded-xl cursor-pointer transition-all duration-300 ease-in-out">
           <div className="p-2 border-2 border-gray-200 bg-white bg-gradient-to-t from-SDX-LightPink/40 via-violet-200/60 to-blue-200/60 ring-2 ring-white ring-inset rounded-xl">
-            <img
+            <Image
               src="/windows-black.svg"
+              width={40}
+              height={40}
               className="w-10"
             />
           </div>
           <span className="mt-2 text-sm font-bold">Windows</span>
           <div className="flex flex-row gap-2 items-center">
             <span className="font-light laptop-s:text-xs mobile-s:text-[8px] mobile-m:text-[10px] inline-block align-baseline text-SDX-400">Download</span>
-            <img
-              src="/cloud-download-gray.svg"
-              className="h-3"
-            />
+            <i className="fa-solid fa-cloud-arrow-down text-sm text-SDX-400" />
           </div>
         </div>
       </Link>
@@ -33,18 +33,17 @@ const DownloadBodyCmp = () => (
       <Link href="https://drive.google.com/uc?id=198juIu6U1YOV0FDN9UBa6atSqSB942Tz&export=download" target="_blank" className="w-full">
         <div className="flexCenter text-center flex-col laptop-s:py-5 mobile-s:py-2 bg-white/80 border-2 border-gray-200 hover:border-SDX-Pink hover:bg-white w-full rounded-xl cursor-pointer transition-all duration-300 ease-in-out">
           <div className="p-2 border-2 border-gray-200 bg-white bg-gradient-to-t from-SDX-LightPink/40 via-violet-200/60 to-blue-200/60  ring-2 ring-white ring-inset rounded-xl">
-            <img
+            <Image
               src="/apple.svg"
+              width={40}
+              height={40}
               className="w-10"
             />
           </div>
           <span className="mt-2 text-sm font-bold">Mac</span>
           <div className="flex flex-row gap-2 items-center">
             <span className="font-light laptop-s:text-xs mobile-s:text-[8px] mobile-m:text-[10px] inline-block align-baseline text-SDX-400">Download</span>
-            <img
-              src="/cloud-download-gray.svg"
-              className="h-3"
-            />
+            <i className="fa-solid fa-cloud-arrow-down text-sm text-SDX-400" />
           </div>
         </div>
       </Link>
@@ -52,18 +51,17 @@ const DownloadBodyCmp = () => (
       <Link href="https://drive.google.com/uc?id=1VNhZ511F0UtY1EWmElhezsGcR_u0rT0r&export=download" target="_blank" className="w-full">
         <div className="flexCenter text-center flex-col laptop-s:py-5 mobile-s:py-2 bg-white/80 border-2 border-gray-200 hover:border-SDX-Pink hover:bg-white w-full rounded-xl cursor-pointer transition-all duration-300 ease-in-out">
           <div className="p-2 border-2 border-gray-200 bg-white bg-gradient-to-t from-SDX-LightPink/40 via-violet-200/60 to-blue-200/60  ring-2 ring-white ring-inset rounded-xl">
-            <img
+            <Image
               src="/linux.svg"
+              width={40}
+              height={40}
               className="w-10"
             />
           </div>
           <span className="mt-2 text-sm font-bold">Linux</span>
           <div className="flex flex-row gap-2 items-center">
             <span className="font-light laptop-s:text-xs mobile-s:text-[8px] mobile-m:text-[10px] inline-block align-baseline text-SDX-400">Download</span>
-            <img
-              src="/cloud-download-gray.svg"
-              className="h-3"
-            />
+            <i className="fa-solid fa-cloud-arrow-down text-sm text-SDX-400" />
           </div>
         </div>
       </Link>
@@ -74,35 +72,33 @@ const DownloadBodyCmp = () => (
 
       <div className="flexCenter text-center flex-col py-5 bg-white/80 border-2 border-gray-200 w-full rounded-xl">
         <div className="p-2 border-2 border-gray-200 bg-white bg-gradient-to-t from-SDX-LightPink/40 via-violet-200/60 to-blue-200/60  ring-2 ring-white ring-inset rounded-xl">
-          <img
+          <Image
             src="/logo-40x40.png"
+            width={40}
+            height={40}
             className="w-10"
           />
         </div>
         <span className="mt-2 text-sm font-bold">Windows Store</span>
         <div className="flex flex-row gap-2 items-center">
           <span className="font-light laptop-s:text-xs mobile-s:text-[8px] mobile-m:text-[10px] inline-block align-baseline text-SDX-400">apps.microsoft.com</span>
-          <img
-            src="/link-SDX-400.svg"
-            className="h-3"
-          />
+          <i className="fa-solid fa-arrow-up-right-from-square text-sm text-SDX-400" />
         </div>
       </div>
 
       <div className="flexCenter text-center flex-col py-5 bg-white/80 border-2 border-gray-200 w-full rounded-xl">
         <div className="p-2 border-2 border-gray-200 bg-white bg-gradient-to-t from-SDX-LightPink/40 via-violet-200/60 to-blue-200/60  ring-2 ring-white ring-inset rounded-xl">
-          <img
+          <Image
             src="/app-store-ios.svg"
+            width={40}
+            height={40}
             className="w-10"
           />
         </div>
         <span className="mt-2 text-sm font-bold">App Store</span>
         <div className="flex flex-row gap-2 items-center">
-          <span className="font-light laptop-s:text-xs mobile-s:text-[8px] mobile-m:text-[10px] inline-block align-baseline text-SDX-400">www.apple.com/app-store</span>
-          <img
-            src="/link-SDX-400.svg"
-            className="h-3"
-          />
+          <span className="font-light laptop-s:text-xs mobile-s:text-[8px] mobile-m:text-[10px] inline-block align-baseline text-SDX-400">apple.com/app-store</span>
+          <i className="fa-solid fa-arrow-up-right-from-square text-sm text-SDX-400" />
         </div>
       </div>
 
@@ -173,10 +169,10 @@ const CTA = () => {
         </div>
         <div className="grid mobile-s:grid-col-4 tablet-s:grid-cols-12 items-center justify-center tablet-s:mb-10">
           <Link href="https://www.coingecko.com/en/coins/swapdex" target="_blank" className=" mobile-s:col-start-2 mobile-s:col-end-3 tablet-s:col-start-6 tablet-s:col-end-7 mx-auto">
-            <img src="./Gecko.svg" className="object-contain w-20 mobile-s:p-3 laptop-s:p-4" />
+            <Image src="./Gecko.svg" width={100} height={100} className="object-contain w-20 mobile-s:p-3 laptop-s:p-4" />
           </Link>
           <Link href="https://coinmarketcap.com/currencies/swapdex/" target="_blank" className="mobile-s:col-start-3 mobile-s:col-end-4 tablet-s:col-start-7 tablet-s:col-end-8 mx-auto">
-            <img src="./CoinMarketCap.svg" className="object-contain w-20" />
+            <Image src="./CoinMarketCap.svg" width={100} height={100} className="object-contain w-20" />
           </Link>
         </div>
       </div>
