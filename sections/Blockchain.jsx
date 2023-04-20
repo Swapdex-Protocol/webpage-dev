@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import styles from '../styles';
 
 import { staggerContainer, textVariant } from '../utils/motion';
@@ -123,11 +124,16 @@ const Blockchain = () => {
           <div className={`${styles.innerWidth} tablet-s:mt-5 tablet-s:mx-auto flex flex-col laptop-s:flex-row justify-between align-middle`}>
             <div className="flex flex-col laptop-s:flex-row">
               <div className="w-full laptop-s:w-1/2 border-2 border-white rounded-tr-2xl rounded-tl-2xl laptop-s:rounded-tr-none laptop-s:rounded-tl-2xl laptop-s:rounded-bl-2xl overflow-hidden p-2 laptop-s:p-5 bg-SDX-800">
-                <img
-                  src={`${button01IsClicked ? '/slide_01.png' : button02IsClicked ? '/slide_02.png' : '/slide_03.png'}`}
-                  alt="Blockchain"
-                  className="w-full h-full object-contain"
-                />
+                <div className="flex items-center w-full h-full object-contain">
+                  <Image
+                    src={`${button01IsClicked ? '/slide_01.png' : button02IsClicked ? '/slide_02.png' : '/slide_03.png'}`}
+                    alt="Blockchain"
+                    width={1600}
+                    height={900}
+                    className="object-contain"
+                  />
+                </div>
+
               </div>
               <div className="w-full laptop-s:w-1/2 rounded-br-2xl rounded-bl-2xl  laptop-s:rounded-bl-none laptop-s:rounded-tr-2xl laptop-s:rounded-rb-2xl border-2 border-white bg-white/80 py-5 laptop-s:py-14 px-5 laptop-s:px-10">
                 <h2 className={`${button01IsClicked ? '' : 'hidden'} font-bold text-3xl text-SDX-900 mb-5 laptop-s:mb-10`}>User-Centric DeFi Has Arrived!</h2>

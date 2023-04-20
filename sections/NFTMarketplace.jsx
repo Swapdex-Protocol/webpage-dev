@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 import styles from '../styles';
 import NFTCard from '../components/NFTCard';
 
@@ -14,14 +16,14 @@ const NFTMarketplace = () => (
       <div className={`flex flex-col tablet-s:grid tablet-s:grid-row-1 laptop-s:grid-cols-2 ${styles.innerWidth} mx-auto mt-10`}>
         <div className="relative laptop-l:mb-20">
           <div className="absolute top-0 sm:top-10 left-0 bottom-0">
-            <img src="/hero_ball_02_1.webp" className="blur-md z-0 laptop-s:-translate-x-24 laptop-l:translate-x-0 laptop-s:scale-75" />
+            <Image src="/hero_ball_02_1.webp" width={1600} height={900} className="blur-md z-0 laptop-s:-translate-x-24 laptop-l:translate-x-0 laptop-s:scale-75" />
           </div>
           <NFTCard />
         </div>
         <div className="flex flex-col laptop-s:overflow-visible sm:w-full h-full">
           <div className="relative ">
             <div className="absolute top-16 sm:top-0 left-0 right-0 bottom-0 z-0 m-5">
-              <img src="/hero_ball_01_2.webp" className="blur-xl z-0 laptop-l:mt-16" />
+              <Image src="/hero_ball_01_2.webp" width={1600} height={900} className="blur-xl z-0 laptop-l:mt-16" />
             </div>
             <div className="flex flex-row justify-center laptop-s:justify-end gap-5 z-10 mt-5">
               <div className="flex flex-col z-10">
@@ -40,7 +42,7 @@ const NFTMarketplace = () => (
                   <div className="h-3 w-3 rounded-full bg-amber-500" />
                   <div className="h-3 w-3 rounded-full bg-green-500" />
                 </div>
-                <img src="/NFT-marketplace-showcase.svg" />
+                <Image src="/NFT-marketplace-showcase.svg" width={1600} height={900} />
               </div>
             </div>
           </div>
