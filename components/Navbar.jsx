@@ -22,9 +22,8 @@ const MenuItems = ({ isMobile, active, setActive, setIsOpen }) => {
   return (
     <ul className={`list-none flex justify-center items-center flex-row ${isMobile && 'flex-col h-full'}`}>
       {['Blockchain', 'Wallet', 'DEX', 'NFT Marketplace'].map((item, i) => (
-        <div className="flex flex-col reveal-div mx-3">
+        <div key={i} className="flex flex-col reveal-div mx-3">
           <li
-            key={i}
             onClick={() => {
               setActive(item);
               setIsOpen(false);
@@ -47,8 +46,6 @@ const MenuItems = ({ isMobile, active, setActive, setIsOpen }) => {
 };
 
 const Navbar = () => {
-  console.log('test');
-
   const [active, setActive] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -60,9 +57,9 @@ const Navbar = () => {
             <Image
               src="/swapdex-light.png"
               alt="swapdex-logo"
-              objectFit="contain"
               width={200}
               height={100}
+              className="object-contain"
             />
           </Link>
         </div>
@@ -79,7 +76,7 @@ const Navbar = () => {
             <Image
               src="/Kusari_Logo.svg"
               alt="Kusari Logo"
-              objectFit="contain"
+              className="object-contain"
               width={28}
               height={50}
             />
@@ -102,7 +99,7 @@ const Navbar = () => {
             <Image
               src="/swapdex-light.png"
               alt="swapdex-logo"
-              objectFit="contain"
+              className="object-contain"
               width={200}
               height={100}
             />
@@ -136,7 +133,7 @@ const Navbar = () => {
                     <Image
                       src="/Kusari_Logo.svg"
                       alt="Kusari Logo"
-                      objectFit="contain"
+                      className="object-contain"
                       width={28}
                       height={50}
                     />

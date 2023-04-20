@@ -16,6 +16,7 @@ const NFTCard = () => (
         <div className="flex flex-row justify-between gap-2 rounded-full backdrop-blur-xl py-1 px-3">
           <Image
             src="heart-solid.svg"
+            alt="heart"
             width={24}
             height={24}
             className="w-[24px] mobile-m:w-[33px] object-contain"

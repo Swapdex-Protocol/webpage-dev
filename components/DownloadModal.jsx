@@ -26,6 +26,7 @@ const DownloadModal = ({ isOpen, header, subheader, body, footer, handleClose })
             <div className="relative w-3 h-3 minlg:w-6 minlg:h-6 cursor-pointer bg-SDX-Pink border-2 border-gray-200 -top-2 -right-2 p-4 rounded-full" onClick={handleClose}>
               <Image
                 src="/cross.png"
+                alt="cross"
                 layout="fill"
                 className="scale-[0.4]"
               />

@@ -21,17 +21,17 @@ const DEX = () => (
               <div className="h-3 w-3 rounded-full bg-amber-500" />
               <div className="h-3 w-3 rounded-full bg-green-500" />
             </div>
-            <Image src="/DEX-Showcase_03.webp" className="object-contain" width={1600} height={900} />
+            <Image src="/DEX-Showcase_03.webp" alt="Dex showcase" className="object-contain" width={1600} height={900} />
           </div>
         </div>
         <div className="relative grid grid-cols-3 laptop-s:grid-cols-6 justify-items-center laptop-s:justify-between mx-auto tablet-s:mt-10 laptop-s:mt-5 tablet-s:gap-6">
           <p className="font-medium mobile-s:text-[18px] mobile-s:leading-[24px] mobile-s:my-3  tablet-s:text-[20px] tablet-s:leading-6 tablet-s:text-center tablet-s:my-5 text-SDX-900 sm:w-48 tablet-s:w-full my-auto col-span-3 laptop-s:col-span-6">Connected to powerful networks</p>
-          <Image src="/polygon-matic-logo.svg" width={60} height={48} className="mobile-s:h-12 tablet-s:h-16 m-4 sm:my-auto translate-bump shadow-hover-dark" />
-          <Image src="/swapdex-logo-icon.svg" width={60} height={48} className="mobile-s:h-12 tablet-s:h-16 m-4 sm:my-auto translate-bump shadow-hover-dark" />
-          <Image src="/bnb-bnb-logo.svg" width={60} height={48} className="mobile-s:h-12 tablet-s:h-16 m-4 sm:my-auto translate-bump shadow-hover-dark" />
-          <Image src="/Kusari_Logo.svg" width={60} height={48} className="mobile-s:h-12 tablet-s:h-16 m-4 sm:my-auto translate-bump shadow-hover-dark" />
-          <Image src="/ethereum-eth-logo.svg" width={60} height={48} className="mobile-s:h-12 tablet-s:h-16 m-4 sm:my-auto translate-bump shadow-hover-dark" />
-          <Image src="/solana-sol-logo.svg" width={60} height={48} className="mobile-s:h-12 tablet-s:h-16 m-4 sm:my-auto translate-bump shadow-hover-dark" />
+          <Image src="/polygon-matic-logo.svg" width={60} height={48} alt="Polygon Logo" className="mobile-s:h-12 tablet-s:h-16 m-4 sm:my-auto translate-bump shadow-hover-dark" />
+          <Image src="/swapdex-logo-icon.svg" width={60} height={48} alt="SwapDEX Logo" className="mobile-s:h-12 tablet-s:h-16 m-4 sm:my-auto translate-bump shadow-hover-dark" />
+          <Image src="/bnb-bnb-logo.svg" width={60} height={48} alt="Binance Logo" className="mobile-s:h-12 tablet-s:h-16 m-4 sm:my-auto translate-bump shadow-hover-dark" />
+          <Image src="/Kusari_Logo.svg" width={60} height={48} alt="Kusari Logo" className="mobile-s:h-12 tablet-s:h-16 m-4 sm:my-auto translate-bump shadow-hover-dark" />
+          <Image src="/ethereum-eth-logo.svg" width={60} height={48} alt="Ethereum Logo" className="mobile-s:h-12 tablet-s:h-16 m-4 sm:my-auto translate-bump shadow-hover-dark" />
+          <Image src="/solana-sol-logo.svg" width={60} height={48} alt="Solana Logo" className="mobile-s:h-12 tablet-s:h-16 m-4 sm:my-auto translate-bump shadow-hover-dark" />
         </div>
       </div>
       <div className="absolute mobile-s:w-[1000px] laptop-l:w-full mobile-s:mt-48 mobile-s:-translate-x-40 laptop-s:-translate-x-0 laptop-s:mt-[195px] laptop-s:scale-75 sm:mt-0 bottom-0 top-0 right-0 left-0 z-0">

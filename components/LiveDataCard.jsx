@@ -39,11 +39,11 @@ const LiveDataCard = () => {
 
   // Fetch SDX price on CoinGecko
   useEffect(() => {
-    const id = 'swapdex';
-    const currency = 'USD';
+    /* const id = 'swapdex';
+    const currency = 'USD'; */
 
-    const url = `https://api.coingecko.com/api/v3/simple/price?ids=${id}&vs_currencies=${currency}`;
-
+    const url = '/api/price';
+    /* `https://api.coingecko.com/api/v3/simple/price?ids=${id}&vs_currencies=${currency}` */
     axios
       .get(url)
       .then((res) => {
