@@ -59,32 +59,32 @@ const Blockchain = () => {
             <div className="flex flex-col laptop-s:flex-row justify-between laptop-s:gap-5 gap-3">
 
               <div className="relative overflow-hidden">
-                <div className="z-10 flex flex-col rounded-xl w-full h-40 px-6 py-3 laptop-s:py-6 laptop-s:h-52 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.6] hover:bg-white/80">
-                  <div className="flex flex-row gap-2">
+                <div className="z-10 flex flex-col rounded-xl w-full  px-6 py-3 laptop-s:py-6 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.6] hover:bg-white/80">
+                  <div className="flex flex-row gap-2 h-6">
                     <div className="w-1 h-full bg-SDX-Pink" />
                     <h3 className="font-semibold text-[20px] leading-7 text-SDX-900">Independent</h3>
                   </div>
-                  <span className="font-light text-[16px] leading-[20px] tablet-s:text-[18px] tablet-s:leading-[24px] text-SDX-900">Maintaining independence is crucial for SwapDex, as it ensures the network remains trustworthy and free from outside influence</span>
+                  <span className="font-light text-[16px] leading-[20px] tablet-s:text-[18px] tablet-s:leading-[24px] text-SDX-900">Ensuring independence is essential for an upcoming blockchain, as it establishes a reliable and trustworthy network, protected from any external influence.</span>
                 </div>
               </div>
 
               <div className="relative overflow-hidden">
-                <div className="z-10 flex flex-col rounded-xl w-full h-40 laptop-s:h-52 px-6 py-3 laptop-s:py-6 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.6] hover:bg-white/80">
+                <div className="z-10 flex flex-col rounded-xl w-full px-6 py-3 laptop-s:py-6 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.6] hover:bg-white/80">
                   <div className="flex flex-row gap-2">
-                    <div className="w-1 h-full bg-SDX-Pink" />
+                    <div className="w-1 h-6 bg-SDX-Pink" />
                     <h3 className="font-semibold text-[20px] leading-7 text-SDX-900">Open-Source</h3>
                   </div>
-                  <span className="font-light text-[16px] leading-[20px] tablet-s:text-[18px] tablet-s:leading-[24px] text-SDX-900">Open source is critical for SwapDEX as it promotes transparency, collaboration, innovation, and trust within the community</span>
+                  <span className="font-light text-[16px] leading-[20px] tablet-s:text-[18px] tablet-s:leading-[24px] text-SDX-900">Being open-source is a crucial concept for an emerging blockchain, as it fosters transparency, cooperation, innovation, and confidence among its community members.</span>
                 </div>
               </div>
 
               <div className="relative">
-                <div className="flex flex-col rounded-xl w-full h-40 laptop-s:h-52 px-6 py-3 laptop-s:py-6 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.6] hover:bg-white/80">
+                <div className="flex flex-col rounded-xl w-full px-6 py-3 laptop-s:py-6 gap-5 border-2 border-white transition ease-in-out delay-75 bg-white/[0.6] hover:bg-white/80">
                   <div className="flex flex-row gap-2">
-                    <div className="w-1 h-full bg-SDX-Pink" />
+                    <div className="w-1 h-6 bg-SDX-Pink" />
                     <h3 className="font-semibold text-[20px] leading-7 text-SDX-900">Transparent</h3>
                   </div>
-                  <span className="font-light text-[16px] leading-[20px] tablet-s:text-[18px] tablet-s:leading-[24px] text-SDX-900">SwapDEX values transparency, ensuring that its operations, governance, and decision-making processes are open and accessible to all</span>
+                  <span className="font-light text-[16px] leading-[20px] tablet-s:text-[18px] tablet-s:leading-[24px] text-SDX-900">For a fully decentralised network, transparency is essential, as it ensures that operations, governance, and decision-making processes are open and accessible to all participants.</span>
                 </div>
               </div>
             </div>

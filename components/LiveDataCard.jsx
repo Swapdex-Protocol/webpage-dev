@@ -18,6 +18,9 @@ const createApi = async () => {
   }
 };
 
+// Utility fuction to check if the data fetched is not null or zero (needed for pulse animation)
+const isLive = (value) => value !== null && !Number.isNaN(value);
+
 const LiveDataCard = () => {
   const [api, setApi] = useState(null);
   const [chainHeight, setChainHeight] = useState(null);
@@ -42,7 +45,7 @@ const LiveDataCard = () => {
     /* const id = 'swapdex';
     const currency = 'USD'; */
 
-    const url = '/api/price';
+    const url = 'https://unified-api.swapdex.network/api/price/sdx/usd';
     /* `https://api.coingecko.com/api/v3/simple/price?ids=${id}&vs_currencies=${currency}` */
     axios
       .get(url)
@@ -95,11 +98,15 @@ const LiveDataCard = () => {
             // Total Amount Staked
             const currentEra = await api.query.staking.currentEra();
             const weiTotal = await api.query.staking.erasTotalStake(currentEra.unwrap());
-            // const web3 = new Web3();
             const etherTotal = weiTotal / 10 ** 18;
-            const parsedTotal = parseInt(etherTotal, 10) * sdxPrice;
-            const formattedTotalStake = parsedTotal.toLocaleString(undefined, { maximumFractionDigits: 2 });
-            setTotalStaked(formattedTotalStake);
+            if (sdxPrice === 0) {
+              setTotalStaked(null);
+            } else {
+              const parsedTotal = parseInt(etherTotal, 10) * sdxPrice;
+              const formattedTotalStake = parsedTotal.toLocaleString(undefined, { maximumFractionDigits: 2 });
+              setTotalStaked(formattedTotalStake);
+            }
+            console.log(totalStaked);
 
             // Rewards paid in last era
             /**
@@ -148,11 +155,17 @@ const LiveDataCard = () => {
             const weiFee = info.partialFee.toString();
             const sdxFee = weiFee / 10 ** 18;
             const parsedFee = parseFloat(sdxFee, 10);
-            const parsedPrice = parseFloat(sdxPrice, 10);
-            const txFee = parsedFee * parsedPrice;
-            const parsedTxFee = txFee.toLocaleString(undefined, { maximumFractionDigits: 6 });
-            setTransactionFee(parsedTxFee);
-            // console.log(parsedFee.toLocaleString(undefined, { maximumFractionDigits: 4 }));
+
+            // Check if sdxPrice is not null and a valid number, otherwise set parsed price to zero
+            const parsedPrice = (sdxPrice !== null && !Number.isNaN(parseFloat(sdxPrice))) ? parseFloat(sdxPrice) : 0;
+
+            if (parsedPrice !== 0 && !Number.isNaN(parsedFee)) {
+              const txFee = parsedFee * parsedPrice;
+              const parsedTxFee = txFee.toLocaleString(undefined, { maximumFractionDigits: 6 });
+              setTransactionFee(parsedTxFee);
+            } else {
+              setTransactionFee(null);
+            }
           });
         } catch (error) {
           console.log('Petar in Catch');
@@ -178,12 +191,12 @@ const LiveDataCard = () => {
         <span className="font-semibold text-[18px] leading-[24px] z-50">Live Data</span>
       </div>
 
-      <SmallKPIField title="Chain Height" data={chainHeight} />
-      <SmallKPIField title="Block Time" data={`${elapsedTime} s`} />
-      <SmallKPIField title="Transaction Fee" data={`$ ${transactionFee}`} />
-      <SmallKPIField title="Validator Nodes" data={validatorNodes} />
-      <LargeKPIField title="Total Supply" data={`SDX ${totalSupply}`} />
-      <LargeKPIField title="Total Value Staked" data={`USD ${totalStaked}`} />
+      <SmallKPIField title="Chain Height" data={chainHeight} isLive={isLive(chainHeight)} />
+      <SmallKPIField title="Block Time" data={`${elapsedTime} s`} isLive={isLive(elapsedTime)} />
+      <SmallKPIField title="Transaction Fee" data={`$ ${transactionFee}`} isLive={isLive(transactionFee)} />
+      <SmallKPIField title="Validator Nodes" data={validatorNodes} isLive={isLive(validatorNodes)} />
+      <LargeKPIField title="Total Supply" data={`SDX ${totalSupply}`} isLive={isLive(totalSupply)} />
+      <LargeKPIField title="Total Value Staked" data={`USD ${totalStaked}`} isLive={isLive(sdxPrice)} />
     </div>
 
   );
