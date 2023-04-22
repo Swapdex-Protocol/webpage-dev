@@ -45,7 +45,7 @@ const LiveDataCard = () => {
     /* const id = 'swapdex';
     const currency = 'USD'; */
 
-    const url = 'https://unified-api.swapdex.network/api/price/sdx/usd';
+    const url = 'https://swapdex-price-api.vercel.app/api/price';
     /* `https://api.coingecko.com/api/v3/simple/price?ids=${id}&vs_currencies=${currency}` */
     axios
       .get(url)
