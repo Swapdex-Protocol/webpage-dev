@@ -11,36 +11,40 @@ import styles from '../styles';
 const MenuItems = ({ isMobile, active, setActive, setIsOpen }) => {
   const generateLink = (i) => {
     switch (i) {
-      case 0: return '/#blockchain';
-      case 1: return '/#wallet';
-      case 2: return '/#dex';
-      case 3: return '/#NFTMarketplace';
-      default: return '/';
+      case 0: return { link: '/#blockchain', isExternal: false };
+      case 1: return { link: '/#wallet', isExternal: false };
+      case 2: return { link: '/#dex', isExternal: false };
+      case 3: return { link: '/#NFTMarketplace', isExternal: false };
+      case 4: return { link: 'https://swapdex.network/blog/', isExternal: true };
+      default: return { link: '/', isExternal: false };
     }
   };
 
   return (
     <ul className={`list-none flex justify-center items-center flex-row ${isMobile && 'flex-col h-full'}`}>
-      {['Blockchain', 'Wallet', 'DEX', 'NFT Marketplace'].map((item, i) => (
-        <div key={i} className="flex flex-col reveal-div mx-3">
-          <li
-            onClick={() => {
-              setActive(item);
-              setIsOpen(false);
-            }}
-            className={`flex flex-row items-center font-regular text-lg hover:text-SDX-LightPink
-            ${active === item
-              ? 'text-SDX-Pink'
-              : 'text-SDX-200'}
+      {['Blockchain', 'Wallet', 'DEX', 'NFT Marketplace', 'Blog'].map((item, i) => {
+        const { link, isExternal } = generateLink(i);
+        return (
+          <div key={i} className="flex flex-col reveal-div mx-3">
+            <li
+              onClick={() => {
+                setActive(item);
+                setIsOpen(false);
+              }}
+              className={`flex flex-row items-center font-regular text-lg hover:text-SDX-LightPink
+              ${active === item
+                ? 'text-SDX-Pink'
+                : 'text-SDX-200'}
               transition-colors duration-300`}
-          >
-            <Link href={generateLink(i)}>
-              {item}
-            </Link>
-          </li>
-          {/* <div className="h-[1px] rounded-full bg-SDX-Pink mx-auto align-bottom nav-underline" /> */}
-        </div>
-      ))}
+            >
+              {isExternal
+                ? <a href={link} target="_blank" rel="noopener noreferrer">{item}</a>
+                : <Link href={link}>{item}</Link>}
+            </li>
+            {/* <div className="h-[1px] rounded-full bg-SDX-Pink mx-auto align-bottom nav-underline" /> */}
+          </div>
+        );
+      })}
     </ul>
   );
 };
@@ -67,7 +71,7 @@ const Navbar = () => {
         {/* This is the div for the menu on larger screens */}
         <div className="hidden laptop-s:flex ">
           <ul className="list-none flex justify-center items-center flex-row">
-            <MenuItems active={active} setActive={setActive} />
+            <MenuItems active={active} setActive={setActive} setIsOpen={setIsOpen} />
           </ul>
         </div>
 
