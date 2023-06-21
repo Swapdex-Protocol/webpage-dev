@@ -134,7 +134,7 @@ const Footer = () => (
 
         <div className="flex flex-col gap-4">
           <h1 className="font-semibold text-[16px] leading-5 sm:text-[14px] sm:leading-4 text-SDX-200">Branding</h1>
-          <Link href="https://drive.google.com/drive/u/1/folders/1bgNeXs8XqfM7ORmN5V0pHXNjnv_0ArbN" target="_blank">
+          <Link href="https://drive.google.com/drive/folders/1tU5KNmZhKnFZTfyzAzQujgZs44hetoTg?usp=sharing" target="_blank">
             <div className="inline-block reveal-div min-w-0">
               <p className="font-light text-[12px] leading-4 text-SDX-200">Media Kit</p>
               <div className="h-[1px] rounded-full bg-[#fbf8cc] align-bottom nav-underline" />
