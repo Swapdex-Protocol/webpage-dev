@@ -128,7 +128,7 @@ const CTA = () => {
         <div className="flex mt-8 mb-12">
           <div className="sm:mx-auto w-full flex flex-col sm:flex-row gap-4 tablet-s:justify-center">
             <MobileDownloadButton
-              link=""
+              link="https://app.swapdex.network/swapdex/"
               logo="/swapdex-logo-icon.svg"
               className="border border-SDX-Pink bg-white/50 backdrop-blur-md my-auto py-4 px-6 gap-2 w-full justify-center items-algin-center translate-bump shadow-hover"
               logoClasses="w-[26px] h-[26px]"
