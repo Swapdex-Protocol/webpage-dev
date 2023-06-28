@@ -10,14 +10,14 @@ import { DownloadModal, ModalButton } from '../components';
 
 const DownloadBodyCmp = () => (
   <div className="p-5 laptop-s:px-10 mobile-s:px-5 border-t-2 border-b-2 border-gray-200">
-    <h2 className="text-lg leading-7 font-semibold">Stable Beta Builds</h2>
+    <h2 className="text-lg leading-7 font-semibold">Choose your Operating System</h2>
     <div className="flex laptop-s:flex-row justify-between laptop-s:gap-5 mobile-s:gap-2 mt-3">
-      <Link href="https://github.com/Swapdex-Protocol/Dashboard/releases/download/0.0.185/SwapDEX-Dashboard-Setup-0.0.185.exe" target="_blank" className="w-full">
+      <Link href="https://github.com/Swapdex-Protocol/Dashboard/releases/download/0.0.195/SwapDEX-Dashboard-Setup-0.0.195.exe" target="_blank" className="w-full">
         <div className="flexCenter text-center flex-col laptop-s:py-5 mobile-s:py-2 bg-white/80 border-2 border-gray-200 hover:border-SDX-Pink hover:bg-white w-full rounded-xl cursor-pointer transition-all duration-300 ease-in-out">
           <div className="p-2 border-2 border-gray-200 bg-white bg-gradient-to-t from-SDX-LightPink/40 via-violet-200/60 to-blue-200/60 ring-2 ring-white ring-inset rounded-xl">
             <Image
               src="/windows-black.svg"
-              alt="windows logo"
+              alt="Windows Logo"
               width={40}
               height={40}
               className="w-10"
@@ -31,7 +31,7 @@ const DownloadBodyCmp = () => (
         </div>
       </Link>
 
-      <Link href="https://github.com/Swapdex-Protocol/Dashboard/releases/download/0.0.185/SwapDEX-Dashboard-0.0.185.dmg" target="_blank" className="w-full">
+      <Link href="https://github.com/Swapdex-Protocol/Dashboard/releases/download/0.0.195/SwapDEX-Dashboard-0.0.195.dmg" target="_blank" className="w-full">
         <div className="flexCenter text-center flex-col laptop-s:py-5 mobile-s:py-2 bg-white/80 border-2 border-gray-200 hover:border-SDX-Pink hover:bg-white w-full rounded-xl cursor-pointer transition-all duration-300 ease-in-out">
           <div className="p-2 border-2 border-gray-200 bg-white bg-gradient-to-t from-SDX-LightPink/40 via-violet-200/60 to-blue-200/60  ring-2 ring-white ring-inset rounded-xl">
             <Image
@@ -50,18 +50,59 @@ const DownloadBodyCmp = () => (
         </div>
       </Link>
 
-      <Link href="https://github.com/Swapdex-Protocol/Dashboard/releases/download/0.0.185/SwapDEX-Dashboard-0.0.185.AppImage" target="_blank" className="w-full">
+      <Link href="https://github.com/Swapdex-Protocol/Dashboard/releases/download/0.0.195/SwapDEX-Dashboard-0.0.195-arm64.dmg" target="_blank" className="w-full">
+        <div className="flexCenter text-center flex-col laptop-s:py-5 mobile-s:py-2 bg-white/80 border-2 border-gray-200 hover:border-SDX-Pink hover:bg-white w-full rounded-xl cursor-pointer transition-all duration-300 ease-in-out">
+          <div className="p-2 border-2 border-gray-200 bg-white bg-gradient-to-t from-SDX-LightPink/40 via-violet-200/60 to-blue-200/60  ring-2 ring-white ring-inset rounded-xl">
+            <Image
+              src="/apple.svg"
+              alt="apple logo"
+              width={40}
+              height={40}
+              className="w-10"
+            />
+          </div>
+          <span className="mt-2 text-sm font-bold">Mac (Silicon)</span>
+          <div className="flex flex-row gap-2 items-center">
+            <span className="font-light laptop-s:text-xs mobile-s:text-[8px] mobile-m:text-[10px] inline-block align-baseline text-SDX-400">Download</span>
+            <i className="fa-solid fa-cloud-arrow-down text-sm text-SDX-400" />
+          </div>
+        </div>
+      </Link>
+
+    </div>
+
+    <div className="grid grid-cols-3 content-start laptop-s:flex-row justify-between laptop-s:gap-5 mobile-s:gap-2 mt-3">
+      <Link href="https://github.com/Swapdex-Protocol/Dashboard/releases/download/0.0.195/SwapDEX-Dashboard-0.0.195.AppImage" target="_blank" className="w-full">
         <div className="flexCenter text-center flex-col laptop-s:py-5 mobile-s:py-2 bg-white/80 border-2 border-gray-200 hover:border-SDX-Pink hover:bg-white w-full rounded-xl cursor-pointer transition-all duration-300 ease-in-out">
           <div className="p-2 border-2 border-gray-200 bg-white bg-gradient-to-t from-SDX-LightPink/40 via-violet-200/60 to-blue-200/60  ring-2 ring-white ring-inset rounded-xl">
             <Image
               src="/linux.svg"
-              alt="linux logo"
+              alt="Linux logo"
               width={40}
               height={40}
               className="w-10"
             />
           </div>
           <span className="mt-2 text-sm font-bold">Linux (Intel)</span>
+          <div className="flex flex-row gap-2 items-center">
+            <span className="font-light laptop-s:text-xs mobile-s:text-[8px] mobile-m:text-[10px] inline-block align-baseline text-SDX-400">Download</span>
+            <i className="fa-solid fa-cloud-arrow-down text-sm text-SDX-400" />
+          </div>
+        </div>
+      </Link>
+
+      <Link href="https://github.com/Swapdex-Protocol/Dashboard/releases/download/0.0.195/SwapDEX-Dashboard-0.0.195-arm64.AppImage" target="_blank" className="w-full">
+        <div className="flexCenter text-center flex-col laptop-s:py-5 mobile-s:py-2 bg-white/80 border-2 border-gray-200 hover:border-SDX-Pink hover:bg-white w-full rounded-xl cursor-pointer transition-all duration-300 ease-in-out">
+          <div className="p-2 border-2 border-gray-200 bg-white bg-gradient-to-t from-SDX-LightPink/40 via-violet-200/60 to-blue-200/60  ring-2 ring-white ring-inset rounded-xl">
+            <Image
+              src="/linux.svg"
+              alt="Linux logo"
+              width={40}
+              height={40}
+              className="w-10"
+            />
+          </div>
+          <span className="mt-2 text-sm font-bold">Linux (ARM)</span>
           <div className="flex flex-row gap-2 items-center">
             <span className="font-light laptop-s:text-xs mobile-s:text-[8px] mobile-m:text-[10px] inline-block align-baseline text-SDX-400">Download</span>
             <i className="fa-solid fa-cloud-arrow-down text-sm text-SDX-400" />
@@ -77,7 +118,7 @@ const DownloadBodyCmp = () => (
         <div className="p-2 border-2 border-gray-200 bg-white bg-gradient-to-t from-SDX-LightPink/40 via-violet-200/60 to-blue-200/60  ring-2 ring-white ring-inset rounded-xl">
           <Image
             src="/logo-40x40.png"
-            alt="windows store logo"
+            alt="Windows Store Logo"
             width={40}
             height={40}
             className="w-10"
