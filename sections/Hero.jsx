@@ -12,7 +12,7 @@ import { LiveDataCard, DownloadModal, ModalButton, MobileDownloadButton } from '
 
 const DownloadBodyCmp = () => (
   <div className="p-5 laptop-s:px-10 mobile-s:px-5 border-t-2 border-b-2 border-gray-200">
-    <h2 className="text-lg leading-7 font-semibold">Choose your Operating System</h2>
+    <h2 className="text-lg leading-7 font-semibold">Desktop Wallet</h2>
     <div className="flex laptop-s:flex-row justify-between laptop-s:gap-5 mobile-s:gap-2 mt-3">
       <Link href="https://github.com/Swapdex-Protocol/Dashboard/releases/download/0.0.195/SwapDEX-Dashboard-Setup-0.0.195.exe" target="_blank" className="w-full">
         <div className="flexCenter text-center flex-col laptop-s:py-5 mobile-s:py-2 bg-white/80 border-2 border-gray-200 hover:border-SDX-Pink hover:bg-white w-full rounded-xl cursor-pointer transition-all duration-300 ease-in-out">
@@ -113,46 +113,6 @@ const DownloadBodyCmp = () => (
       </Link>
     </div>
 
-    <h2 className="hidden laptop-s:flex text-lg leading-7 font-semibold mt-8">Available Soon</h2>
-    <div className="hidden laptop-s:flex tablet-s:flex-row mobile-s:flex-col justify-between tablet-s:gap-5 mobile-s:gap-1 mt-3">
-
-      <div className="flexCenter text-center flex-col py-5 bg-white/80 border-2 border-gray-200 w-full rounded-xl">
-        <div className="p-2 border-2 border-gray-200 bg-white bg-gradient-to-t from-SDX-LightPink/40 via-violet-200/60 to-blue-200/60  ring-2 ring-white ring-inset rounded-xl">
-          <Image
-            src="/logo-40x40.png"
-            alt="Windows Store Logo"
-            width={40}
-            height={40}
-            className="w-10"
-          />
-        </div>
-        <span className="mt-2 text-sm font-bold">Windows Store</span>
-        <div className="flex flex-row gap-2 items-center">
-          <span className="font-light laptop-s:text-xs mobile-s:text-[8px] mobile-m:text-[10px] inline-block align-baseline text-SDX-400">apps.microsoft.com</span>
-          <i className="fa-solid fa-arrow-up-right-from-square text-sm text-SDX-400" />
-        </div>
-      </div>
-
-      <div className="flexCenter text-center flex-col py-5 bg-white/80 border-2 border-gray-200 w-full rounded-xl">
-        <div className="p-2 border-2 border-gray-200 bg-white bg-gradient-to-t from-SDX-LightPink/40 via-violet-200/60 to-blue-200/60  ring-2 ring-white ring-inset rounded-xl">
-          <Image
-            src="/app-store-ios.svg"
-            alt="app store logo"
-            width={40}
-            height={40}
-            className="w-10"
-          />
-        </div>
-        <span className="mt-2 text-sm font-bold">App Store</span>
-        <div className="flex flex-row gap-2 items-center">
-          <span className="font-light laptop-s:text-xs mobile-s:text-[8px] mobile-m:text-[10px] inline-block align-baseline text-SDX-400">apple.com/app-store</span>
-          <i className="fa-solid fa-arrow-up-right-from-square text-sm text-SDX-400" />
-        </div>
-      </div>
-
-      <div className="flexCenter text-center flex-col py-5 w-full" />
-
-    </div>
   </div>
 );
 
@@ -237,7 +197,7 @@ const Hero = () => {
         <DownloadModal
           isOpen={downloadModal}
           header="Choose your Operating System"
-          subheader="Microsoft Store and Apple Store downloads will be available soon"
+          subheader="Navigate the SwapDEX Ecosystem with Ease"
           body={<DownloadBodyCmp />}
           handleClose={() => setDownloadModal(false)}
           footer={(
