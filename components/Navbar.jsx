@@ -149,22 +149,39 @@ const Navbar = () => {
               <MenuItems active={active} setActive={setActive} isMobile setIsOpen={setIsOpen} />
             </div>
             <div className="p-4 border-t border-SDX-300/25">
-              <div className="flex justify-end">
-                <button type="button" className="py-2 px-4 border border-SDX-300 rounded-lg items-center hover:bg-SDX-700 transition-colors duration-300">
-                  <Link href="/kusari" className="flex flex-row gap-2">
+              <div className="flex flex-row justify-between">
+                <button type="button" className="py-2 px-4 border border-SDX-300 bg-gradient-to-r from-cyan-900 to-SDX-700 rounded-lg items-center hover:border-cyan-300 transition-all duration-300">
+                  <Link href="https://pancakeswap.finance/swap?outputCurrency=0xa4d92138537bB0bbeaEab095381Be422D785E7C4&inputCurrency=BNB" target="_blank" className="flex flex-row gap-2">
                     <Image
-                      src="/Kusari_Logo.svg"
-                      alt="Kusari Logo"
+                      src="/icon-round-512.png"
+                      alt="pancake swap link"
                       className="object-contain"
                       width={28}
                       height={50}
                     />
                     <div className="flex flex-col items-start">
                       <div className="flex flex-row items-center gap-1">
-                        <p className="text-SDX-200 font-bold text-sm leading-3">KUSARI</p>
-                        <i className="fa-solid fa-flask-vial text-[#efc640]" />
+                        <p className="text-SDX-200 font-bold text-sm leading-3">TRADE AT</p>
                       </div>
-                      <p className="text-SDX-200 font-light text-xs">Dev. Network</p>
+                      <p className="text-SDX-200 font-light text-xs">Pancake Swap</p>
+                    </div>
+                  </Link>
+                </button>
+
+                <button type="button" className="py-2 px-4 border border-SDX-300 bg-gradient-to-r from-green-900 to-SDX-700 rounded-lg items-center hover:border-green-300 transition-colors duration-300">
+                  <Link href="https://p2pb2b.com/trade/SDX_USDT/" target="_blank" className="flex flex-row gap-2">
+                    <Image
+                      src="/p2b-icon-512.png"
+                      alt="p2b exchange link"
+                      className="object-contain"
+                      width={28}
+                      height={50}
+                    />
+                    <div className="flex flex-col items-start">
+                      <div className="flex flex-row items-center gap-1">
+                        <p className="text-SDX-200 font-bold text-sm leading-3">TRADE AT</p>
+                      </div>
+                      <p className="text-SDX-200 font-light text-xs">P2B Exchange</p>
                     </div>
                   </Link>
                 </button>
