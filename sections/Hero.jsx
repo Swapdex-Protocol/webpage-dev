@@ -177,8 +177,8 @@ const Hero = () => {
         </div>
       </motion.div>
 
-      <div className="z-0 laptop-s:w-full laptop-s:-translate-x-0 laptop-s:scale-110 2xl:items-center 2xl:laptop-s:-translate-x-0 2xl:justify-center 2xl:-top-16 2xl:scale-120 laptop-s:mt-28 tablet-s:w-[1500px] tablet-s:-translate-x-[350px] mobile-s:w-[1150px] mobile-s:-translate-x-[350px] flex absolute mobile-s:top-0 right-0 left-0 bg-SDX-900 opacity-95">
-        <motion.div variants={fadeInVariant} initial="initial" animate="animate" className="mx-auto inline-flex w-full">
+      <div className="z-0 laptop-s:w-full laptop-s:scale-110 2xl:items-center 2xl:justify-center 2xl:-top-16 2xl:scale-120 xl:justify-center laptop-s:mt-28 laptop-s:translate-x-0 tablet-s:w-[1500px] tablet-s:-translate-x-[350px] mobile-s:w-[1150px] mobile-s:-translate-x-[350px] flex absolute mobile-s:top-0 right-0 left-0 bg-SDX-900 opacity-95">
+        <motion.div variants={fadeInVariant} initial="initial" animate="animate" className="inline-flex justify-center w-full">
           <Image
             src="/hero_BG.webp"
             alt="SwapDex Hero Background"
