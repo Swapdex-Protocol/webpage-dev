@@ -38,7 +38,7 @@ const Footer = () => (
       <div className="grid grid-cols-2 gap-y-5 sm:flex sm:flex-row w-full sm:justify-between mt-8 sm:mt-20">
         <div className="flex flex-col gap-4">
           <h1 className="font-semibold text-[16px] leading-5 sm:text-[14px] sm:leading-4 text-SDX-200">New to SwapDEX?</h1>
-          <Link href="https://drive.google.com/uc?export=download&id=1Pu_2LA6ExWKnpXiho0Adsxg4SdanR3tO" target="_blank">
+          <Link href="https://drive.google.com/uc?export=download&id=184_ZLhTeLgwQBhbv6euq3D9pXwl4bs0f" target="">
             <div className="inline-block reveal-div min-w-0">
               <p className="font-light text-[12px] leading-4 text-SDX-200">Whitepaper</p>
               <div className="h-[1px] rounded-full bg-SDX-Pink align-bottom nav-underline" />
@@ -69,13 +69,13 @@ const Footer = () => (
 
         <div className="flex flex-col gap-4">
           <h1 className="font-semibold text-[16px] leading-5 sm:text-[14px] sm:leading-4 text-SDX-200">Holders</h1>
-          <Link href="https://drive.google.com/file/d/1Pu_2LA6ExWKnpXiho0Adsxg4SdanR3tO/view?usp=sharing" target="_blank">
+          <Link href="https://drive.google.com/uc?export=download&id=184_ZLhTeLgwQBhbv6euq3D9pXwl4bs0f" target="">
             <div className="inline-block reveal-div min-w-0">
               <p className="font-light text-[12px] leading-4 text-SDX-200">Coin Economics</p>
               <div className="h-[1px] rounded-full bg-[#8eecf5] align-bottom nav-underline" />
             </div>
           </Link>
-          <Link href="/" target="https://drive.google.com/uc?export=download&id=1Pu_2LA6ExWKnpXiho0Adsxg4SdanR3tO">
+          <Link href="/" target="https://drive.google.com/uc?export=download&id=184_ZLhTeLgwQBhbv6euq3D9pXwl4bs0f">
             <div className="inline-block reveal-div min-w-0">
               <p className="font-light text-[12px] leading-4 text-SDX-200">Roadmap</p>
               <div className="h-[1px] rounded-full bg-[#8eecf5] align-bottom nav-underline" />
@@ -93,7 +93,7 @@ const Footer = () => (
               <div className="h-[1px] rounded-full bg-[#8eecf5] align-bottom nav-underline" />
             </div>
           </Link>
-          <Link href="/" target="https://drive.google.com/uc?export=download&id=1Pu_2LA6ExWKnpXiho0Adsxg4SdanR3tO">
+          <Link href="/" target="https://drive.google.com/uc?export=download&id=184_ZLhTeLgwQBhbv6euq3D9pXwl4bs0f">
             <div className="inline-block reveal-div min-w-0">
               <p className="font-light text-[12px] leading-4 text-SDX-200">NFT-based LP-Farming</p>
               <div className="h-[1px] rounded-full bg-[#8eecf5] align-bottom nav-underline" />
