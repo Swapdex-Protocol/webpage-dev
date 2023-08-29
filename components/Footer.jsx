@@ -17,7 +17,7 @@ const Footer = () => (
             <Link href="https://www.youtube.com/@swapdexnetwork4531?sub_confirmation=1" target="_blank">
               <i className="fa-brands fa-youtube text-2xl text-SDX-200 hover:text-SDX-Pink transition-colors duration-200" />
             </Link>
-            <Link href="https://discord.gg/hBsxnNZgnX" target="_blank">
+            <Link href="https://discord.swapdex.network/" target="_blank">
               <i className="fa-brands fa-discord text-2xl text-SDX-200 hover:text-SDX-Pink transition-colors duration-200" />
             </Link>
             <Link href="https://t.me/officialswapdexgroup" target="_blank">
